@@ -1,0 +1,620 @@
+{
+ "collected_at": "2026-10-02T12:00:00+00:00",
+ "products": [
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "8",
+     "instanceType": "p5.48xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "us-east-1",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKU940F7FB9B0"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKU940F7FB9B0.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKU940F7FB9B0.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$49.54 per On Demand Linux p5.48xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "49.5400000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "8",
+     "instanceType": "p5.48xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "us-east-2",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKUB30262FAC8"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKUB30262FAC8.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKUB30262FAC8.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$55.04 per On Demand Linux p5.48xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "55.0400000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "8",
+     "instanceType": "p5.48xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "us-west-2",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKUDC9E5FC4BA"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKUDC9E5FC4BA.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKUDC9E5FC4BA.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$55.04 per On Demand Linux p5.48xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "55.0400000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "8",
+     "instanceType": "p5.48xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "eu-west-2",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKUABBA1A7972"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKUABBA1A7972.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKUABBA1A7972.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$63.0 per On Demand Linux p5.48xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "63.0000000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "8",
+     "instanceType": "p5.48xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "ap-northeast-1",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKU32FF406AF4"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKU32FF406AF4.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKU32FF406AF4.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$70.0 per On Demand Linux p5.48xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "70.0000000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "8",
+     "instanceType": "p5.48xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "ap-south-1",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKU75B466221D"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKU75B466221D.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKU75B466221D.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$6.88 per On Demand Linux p5.48xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "6.8800000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "8",
+     "instanceType": "p5en.48xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "us-east-1",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKU03257377BD"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKU03257377BD.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKU03257377BD.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$63.3 per On Demand Linux p5en.48xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "63.3000000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "8",
+     "instanceType": "p5en.48xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "us-east-2",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKU51DE0AFC5B"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKU51DE0AFC5B.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKU51DE0AFC5B.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$63.3 per On Demand Linux p5en.48xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "63.3000000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "8",
+     "instanceType": "p4d.24xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "us-east-1",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKU9908877386"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKU9908877386.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKU9908877386.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$21.96 per On Demand Linux p4d.24xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "21.9600000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "4",
+     "instanceType": "p4d.24xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "us-west-2",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKU9BDCD01E60"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKU9BDCD01E60.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKU9BDCD01E60.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$21.96 per On Demand Linux p4d.24xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "21.9600000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "8",
+     "instanceType": "p4d.24xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "sa-east-1",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKU136999737A"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKU136999737A.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKU136999737A.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$0.0 per On Demand Linux p4d.24xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "0.0000000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "1",
+     "instanceType": "g6.xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "us-east-1",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKU1BD1D4B5AA"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKU1BD1D4B5AA.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKU1BD1D4B5AA.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$0.8048 per On Demand Linux g6.xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "0.8048000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "1",
+     "instanceType": "g6.xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "us-west-2",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKUCC55C659E8"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKUCC55C659E8.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKUCC55C659E8.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$0.8048 per On Demand Linux g6.xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "0.8048000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "8",
+     "instanceType": "p5.48xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Windows",
+     "preInstalledSw": "NA",
+     "regionCode": "us-east-1",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKUE8D29B3770"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKUE8D29B3770.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKUE8D29B3770.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$62.0 per On Demand Linux p5.48xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "62.0000000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "8",
+     "instanceType": "p5.48xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "us-east-1",
+     "tenancy": "Dedicated"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKU2DA4505337"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKU2DA4505337.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKU2DA4505337.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$60.5 per On Demand Linux p5.48xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "60.5000000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "1",
+     "instanceType": "g6.xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Local Zone",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "us-east-1-lax-1",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKU7562C1AD21"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKU7562C1AD21.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKU7562C1AD21.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$0.95 per On Demand Linux g6.xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "0.9500000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "UnusedCapacityReservation",
+     "gpu": "8",
+     "instanceType": "p5.48xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "us-east-1",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKU6608C58EBB"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKU6608C58EBB.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKU6608C58EBB.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$55.04 per On Demand Linux p5.48xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "55.0400000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  },
+  {
+   "product": {
+    "attributes": {
+     "capacitystatus": "Used",
+     "gpu": "1",
+     "instanceType": "p3.2xlarge",
+     "licenseModel": "No License required",
+     "locationType": "AWS Region",
+     "operatingSystem": "Linux",
+     "preInstalledSw": "NA",
+     "regionCode": "us-east-1",
+     "tenancy": "Shared"
+    },
+    "productFamily": "Compute Instance",
+    "sku": "SKU653D9EE315"
+   },
+   "serviceCode": "AmazonEC2",
+   "terms": {
+    "OnDemand": {
+     "SKU653D9EE315.JRTCKXETXF": {
+      "priceDimensions": {
+       "SKU653D9EE315.JRTCKXETXF.6YS6EN2CT7": {
+        "description": "$3.06 per On Demand Linux p3.2xlarge Instance Hour",
+        "pricePerUnit": {
+         "USD": "3.0600000000"
+        },
+        "unit": "Hrs"
+       }
+      },
+      "termAttributes": {}
+     }
+    }
+   }
+  }
+ ],
+ "provider": "aws",
+ "snapshot_date": "2026-10-02",
+ "source": "SYNTHETIC FIXTURE (AWS Price List API format)"
+}

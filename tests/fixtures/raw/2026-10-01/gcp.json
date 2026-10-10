@@ -1,0 +1,474 @@
+{
+ "collected_at": "2026-10-01T12:00:00+00:00",
+ "provider": "gcp",
+ "skus": [
+  {
+   "category": {
+    "resourceFamily": "Compute",
+    "resourceGroup": "GPU",
+    "serviceDisplayName": "Compute Engine",
+    "usageType": "OnDemand"
+   },
+   "description": "Nvidia H100 80GB GPU running in Americas",
+   "name": "services/6F81-5844-456A/skus/A001-H100-US",
+   "pricingInfo": [
+    {
+     "effectiveTime": "2026-09-01T00:00:00Z",
+     "pricingExpression": {
+      "displayQuantity": 1,
+      "tieredRates": [
+       {
+        "startUsageAmount": 0,
+        "unitPrice": {
+         "currencyCode": "USD",
+         "nanos": 800000000,
+         "units": "9"
+        }
+       }
+      ],
+      "usageUnit": "h"
+     }
+    }
+   ],
+   "serviceProviderName": "Google",
+   "serviceRegions": [
+    "us-central1",
+    "us-east4",
+    "us-east5"
+   ],
+   "skuId": "A001-H100-US"
+  },
+  {
+   "category": {
+    "resourceFamily": "Compute",
+    "resourceGroup": "GPU",
+    "serviceDisplayName": "Compute Engine",
+    "usageType": "OnDemand"
+   },
+   "description": "Nvidia H100 80GB GPU running in Netherlands",
+   "name": "services/6F81-5844-456A/skus/A002-H100-EU",
+   "pricingInfo": [
+    {
+     "effectiveTime": "2026-09-01T00:00:00Z",
+     "pricingExpression": {
+      "displayQuantity": 1,
+      "tieredRates": [
+       {
+        "startUsageAmount": 0,
+        "unitPrice": {
+         "currencyCode": "USD",
+         "nanos": 780000000,
+         "units": "10"
+        }
+       }
+      ],
+      "usageUnit": "h"
+     }
+    }
+   ],
+   "serviceProviderName": "Google",
+   "serviceRegions": [
+    "europe-west4"
+   ],
+   "skuId": "A002-H100-EU"
+  },
+  {
+   "category": {
+    "resourceFamily": "Compute",
+    "resourceGroup": "GPU",
+    "serviceDisplayName": "Compute Engine",
+    "usageType": "Preemptible"
+   },
+   "description": "Spot Preemptible Nvidia H100 80GB GPU running in Americas",
+   "name": "services/6F81-5844-456A/skus/A003-H100-SPOT",
+   "pricingInfo": [
+    {
+     "effectiveTime": "2026-09-01T00:00:00Z",
+     "pricingExpression": {
+      "displayQuantity": 1,
+      "tieredRates": [
+       {
+        "startUsageAmount": 0,
+        "unitPrice": {
+         "currencyCode": "USD",
+         "nanos": 250000000,
+         "units": "2"
+        }
+       }
+      ],
+      "usageUnit": "h"
+     }
+    }
+   ],
+   "serviceProviderName": "Google",
+   "serviceRegions": [
+    "us-central1",
+    "us-east4",
+    "us-east5"
+   ],
+   "skuId": "A003-H100-SPOT"
+  },
+  {
+   "category": {
+    "resourceFamily": "Compute",
+    "resourceGroup": "GPU",
+    "serviceDisplayName": "Compute Engine",
+    "usageType": "OnDemand"
+   },
+   "description": "Nvidia H100 80GB Plus GPU running in Americas",
+   "name": "services/6F81-5844-456A/skus/A004-H100P",
+   "pricingInfo": [
+    {
+     "effectiveTime": "2026-09-01T00:00:00Z",
+     "pricingExpression": {
+      "displayQuantity": 1,
+      "tieredRates": [
+       {
+        "startUsageAmount": 0,
+        "unitPrice": {
+         "currencyCode": "USD",
+         "nanos": 100000000,
+         "units": "11"
+        }
+       }
+      ],
+      "usageUnit": "h"
+     }
+    }
+   ],
+   "serviceProviderName": "Google",
+   "serviceRegions": [
+    "us-central1",
+    "us-east4",
+    "us-east5"
+   ],
+   "skuId": "A004-H100P"
+  },
+  {
+   "category": {
+    "resourceFamily": "Compute",
+    "resourceGroup": "GPU",
+    "serviceDisplayName": "Compute Engine",
+    "usageType": "OnDemand"
+   },
+   "description": "Nvidia Tesla A100 GPU running in Americas",
+   "name": "services/6F81-5844-456A/skus/A005-A100",
+   "pricingInfo": [
+    {
+     "effectiveTime": "2026-09-01T00:00:00Z",
+     "pricingExpression": {
+      "displayQuantity": 1,
+      "tieredRates": [
+       {
+        "startUsageAmount": 0,
+        "unitPrice": {
+         "currencyCode": "USD",
+         "nanos": 930000000,
+         "units": "2"
+        }
+       }
+      ],
+      "usageUnit": "h"
+     }
+    }
+   ],
+   "serviceProviderName": "Google",
+   "serviceRegions": [
+    "us-central1",
+    "us-east4",
+    "us-east5"
+   ],
+   "skuId": "A005-A100"
+  },
+  {
+   "category": {
+    "resourceFamily": "Compute",
+    "resourceGroup": "GPU",
+    "serviceDisplayName": "Compute Engine",
+    "usageType": "OnDemand"
+   },
+   "description": "Nvidia A100 80GB GPU running in Americas",
+   "name": "services/6F81-5844-456A/skus/A006-A100-80",
+   "pricingInfo": [
+    {
+     "effectiveTime": "2026-09-01T00:00:00Z",
+     "pricingExpression": {
+      "displayQuantity": 1,
+      "tieredRates": [
+       {
+        "startUsageAmount": 0,
+        "unitPrice": {
+         "currencyCode": "USD",
+         "nanos": 930000000,
+         "units": "3"
+        }
+       }
+      ],
+      "usageUnit": "h"
+     }
+    }
+   ],
+   "serviceProviderName": "Google",
+   "serviceRegions": [
+    "us-central1",
+    "us-east4",
+    "us-east5"
+   ],
+   "skuId": "A006-A100-80"
+  },
+  {
+   "category": {
+    "resourceFamily": "Compute",
+    "resourceGroup": "GPU",
+    "serviceDisplayName": "Compute Engine",
+    "usageType": "OnDemand"
+   },
+   "description": "Nvidia L4 GPU running in Americas",
+   "name": "services/6F81-5844-456A/skus/A007-L4",
+   "pricingInfo": [
+    {
+     "effectiveTime": "2026-09-01T00:00:00Z",
+     "pricingExpression": {
+      "displayQuantity": 1,
+      "tieredRates": [
+       {
+        "startUsageAmount": 0,
+        "unitPrice": {
+         "currencyCode": "USD",
+         "nanos": 560000000,
+         "units": "0"
+        }
+       }
+      ],
+      "usageUnit": "h"
+     }
+    }
+   ],
+   "serviceProviderName": "Google",
+   "serviceRegions": [
+    "us-central1",
+    "us-east4",
+    "us-east5"
+   ],
+   "skuId": "A007-L4"
+  },
+  {
+   "category": {
+    "resourceFamily": "Compute",
+    "resourceGroup": "GPU",
+    "serviceDisplayName": "Compute Engine",
+    "usageType": "OnDemand"
+   },
+   "description": "Nvidia H200 141GB GPU running in Americas",
+   "name": "services/6F81-5844-456A/skus/A008-H200",
+   "pricingInfo": [
+    {
+     "effectiveTime": "2026-09-01T00:00:00Z",
+     "pricingExpression": {
+      "displayQuantity": 1,
+      "tieredRates": [
+       {
+        "startUsageAmount": 0,
+        "unitPrice": {
+         "currencyCode": "USD",
+         "nanos": 500000000,
+         "units": "10"
+        }
+       }
+      ],
+      "usageUnit": "h"
+     }
+    }
+   ],
+   "serviceProviderName": "Google",
+   "serviceRegions": [
+    "us-central1",
+    "us-east4",
+    "us-east5"
+   ],
+   "skuId": "A008-H200"
+  },
+  {
+   "category": {
+    "resourceFamily": "Compute",
+    "resourceGroup": "GPU",
+    "serviceDisplayName": "Compute Engine",
+    "usageType": "Commit1Yr"
+   },
+   "description": "Commitment v1: Nvidia H100 80GB GPU in Americas for 1 Year",
+   "name": "services/6F81-5844-456A/skus/B001-COMMIT",
+   "pricingInfo": [
+    {
+     "effectiveTime": "2026-09-01T00:00:00Z",
+     "pricingExpression": {
+      "displayQuantity": 1,
+      "tieredRates": [
+       {
+        "startUsageAmount": 0,
+        "unitPrice": {
+         "currencyCode": "USD",
+         "nanos": 400000000,
+         "units": "6"
+        }
+       }
+      ],
+      "usageUnit": "h"
+     }
+    }
+   ],
+   "serviceProviderName": "Google",
+   "serviceRegions": [
+    "us-central1",
+    "us-east4",
+    "us-east5"
+   ],
+   "skuId": "B001-COMMIT"
+  },
+  {
+   "category": {
+    "resourceFamily": "Compute",
+    "resourceGroup": "GPU",
+    "serviceDisplayName": "Compute Engine",
+    "usageType": "OnDemand"
+   },
+   "description": "Nvidia H100 80GB GPU DWS Defined Duration running in Americas",
+   "name": "services/6F81-5844-456A/skus/B002-DWS",
+   "pricingInfo": [
+    {
+     "effectiveTime": "2026-09-01T00:00:00Z",
+     "pricingExpression": {
+      "displayQuantity": 1,
+      "tieredRates": [
+       {
+        "startUsageAmount": 0,
+        "unitPrice": {
+         "currencyCode": "USD",
+         "nanos": 100000000,
+         "units": "7"
+        }
+       }
+      ],
+      "usageUnit": "h"
+     }
+    }
+   ],
+   "serviceProviderName": "Google",
+   "serviceRegions": [
+    "us-central1",
+    "us-east4",
+    "us-east5"
+   ],
+   "skuId": "B002-DWS"
+  },
+  {
+   "category": {
+    "resourceFamily": "Compute",
+    "resourceGroup": "GPU",
+    "serviceDisplayName": "Compute Engine",
+    "usageType": "OnDemand"
+   },
+   "description": "Nvidia Tesla T4 GPU running in Americas",
+   "name": "services/6F81-5844-456A/skus/B003-T4",
+   "pricingInfo": [
+    {
+     "effectiveTime": "2026-09-01T00:00:00Z",
+     "pricingExpression": {
+      "displayQuantity": 1,
+      "tieredRates": [
+       {
+        "startUsageAmount": 0,
+        "unitPrice": {
+         "currencyCode": "USD",
+         "nanos": 350000000,
+         "units": "0"
+        }
+       }
+      ],
+      "usageUnit": "h"
+     }
+    }
+   ],
+   "serviceProviderName": "Google",
+   "serviceRegions": [
+    "us-central1",
+    "us-east4",
+    "us-east5"
+   ],
+   "skuId": "B003-T4"
+  },
+  {
+   "category": {
+    "resourceFamily": "Compute",
+    "resourceGroup": "GPU",
+    "serviceDisplayName": "Compute Engine",
+    "usageType": "OnDemand"
+   },
+   "description": "GPU accelerator usage, legacy format",
+   "name": "services/6F81-5844-456A/skus/B004-ODD",
+   "pricingInfo": [
+    {
+     "effectiveTime": "2026-09-01T00:00:00Z",
+     "pricingExpression": {
+      "displayQuantity": 1,
+      "tieredRates": [
+       {
+        "startUsageAmount": 0,
+        "unitPrice": {
+         "currencyCode": "USD",
+         "nanos": 0,
+         "units": "1"
+        }
+       }
+      ],
+      "usageUnit": "h"
+     }
+    }
+   ],
+   "serviceProviderName": "Google",
+   "serviceRegions": [
+    "us-central1",
+    "us-east4",
+    "us-east5"
+   ],
+   "skuId": "B004-ODD"
+  },
+  {
+   "category": {
+    "resourceFamily": "Compute",
+    "resourceGroup": "GPU",
+    "serviceDisplayName": "Compute Engine",
+    "usageType": "OnDemand"
+   },
+   "description": "Nvidia L4 GPU attached to reservation, Americas",
+   "name": "services/6F81-5844-456A/skus/B005-MONTH",
+   "pricingInfo": [
+    {
+     "effectiveTime": "2026-09-01T00:00:00Z",
+     "pricingExpression": {
+      "displayQuantity": 1,
+      "tieredRates": [
+       {
+        "startUsageAmount": 0,
+        "unitPrice": {
+         "currencyCode": "USD",
+         "nanos": 0,
+         "units": "400"
+        }
+       }
+      ],
+      "usageUnit": "mo"
+     }
+    }
+   ],
+   "serviceProviderName": "Google",
+   "serviceRegions": [
+    "us-central1",
+    "us-east4",
+    "us-east5"
+   ],
+   "skuId": "B005-MONTH"
+  }
+ ],
+ "snapshot_date": "2026-10-01",
+ "source": "SYNTHETIC FIXTURE (GCP Cloud Billing Catalog API format)"
+}
