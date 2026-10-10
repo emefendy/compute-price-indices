@@ -1,4 +1,4 @@
-# GPU Price Tracker
+# Compute Price Indices
 
 A daily dataset of **public cloud GPU prices**, cleaned and normalized to a single comparable unit: **US dollars per GPU-hour**.
 

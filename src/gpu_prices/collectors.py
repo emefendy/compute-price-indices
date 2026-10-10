@@ -64,7 +64,7 @@ def collect_aws(catalog: Catalog) -> dict:
     try:
         import boto3
     except ImportError as exc:  # pragma: no cover
-        raise RuntimeError("AWS collection needs boto3: pip install 'gpu-prices[aws]'") from exc
+        raise RuntimeError("AWS collection needs boto3: pip install 'compute-price-indices[aws]'") from exc
 
     # The pricing API is only served from a few regions; us-east-1 covers all of EC2.
     client = boto3.client("pricing", region_name="us-east-1")

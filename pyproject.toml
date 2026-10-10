@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "gpu-prices"
+name = "compute-price-indices"
 version = "0.1.0"
 description = "Daily snapshots of public cloud GPU prices, normalized to $/GPU-hour, with data-quality checks and a chained price index."
 readme = "README.md"
