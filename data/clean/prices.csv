@@ -1343,3 +1343,451 @@ snapshot_date,provider,region,instance_type,gpu_class,gpu_model,gpu_memory_gb,gp
 2026-10-12,azure,westus2,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,84.8,10.6,,DZH318Z0LFX8/000J|b6abf711-9d9d-5830-97ba-c0bf6c1b4782
 2026-10-12,azure,westus3,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,84.8,10.6,,DZH318Z0LFX8/001S|a9ee3b7b-a38d-55b6-902c-a315a07245a4
 2026-10-12,azure,westus3,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,84.8,10.6,,DZH318Z0LFX8/001K|9244d63a-214b-58f4-a8a5-76fcbaf81010
+2026-10-13,azure,eastus,Standard_ND96asr_v4,A100-40GB,A100,40,8,on_demand,instance,27.197,3.399625,,DZH318Z0DS6T/0006|7ab89625-d53b-5565-b631-34751eef82be
+2026-10-13,azure,eastus,Standard_ND96asr_v4,A100-40GB,A100,40,8,spot,instance,5.904469,0.738058625,,DZH318Z0DS6T/0008|16605a3a-0696-56d1-929c-61c1e64caa13
+2026-10-13,azure,italynorth,Standard_ND96asr_v4,A100-40GB,A100,40,8,on_demand,instance,35.357,4.419625,,DZH318Z0DS6T/003V|cf6633ea-4bc7-5765-97de-b3d0cdf8284d
+2026-10-13,azure,italynorth,Standard_ND96asr_v4,A100-40GB,A100,40,8,spot,instance,7.676005,0.959500625,,DZH318Z0DS6T/003T|6749524f-efd1-526a-ad9b-6bbe9814ba78
+2026-10-13,azure,southcentralus,Standard_ND96asr_v4,A100-40GB,A100,40,8,on_demand,instance,32.63,4.07875,,DZH318Z0DS6T/0001|75c0ab01-2d51-5780-aa86-ac436bd8e1cc
+2026-10-13,azure,southcentralus,Standard_ND96asr_v4,A100-40GB,A100,40,8,spot,instance,7.083973,0.885496625,,DZH318Z0DS6T/000B|7aa874f1-e56b-56cd-a677-3761a2cebe22
+2026-10-13,azure,usgovvirginia,Standard_ND96asr_v4,A100-40GB,A100,40,8,on_demand,instance,34.003,4.250375,,DZH318Z0DS6T/000S|54e13a2a-3cdb-5703-9d6b-7d3fe8ade127
+2026-10-13,azure,usgovvirginia,Standard_ND96asr_v4,A100-40GB,A100,40,8,spot,instance,7.382051,0.922756375,,DZH318Z0DS6T/000Q|32ea2aa5-07a0-5deb-a8ab-fba275ec24dc
+2026-10-13,azure,westeurope,Standard_ND96asr_v4,A100-40GB,A100,40,8,on_demand,instance,35.357,4.419625,,DZH318Z0DS6T/000F|c6b759b9-9670-5d4f-b1cb-4e9d3e41edeb
+2026-10-13,azure,westeurope,Standard_ND96asr_v4,A100-40GB,A100,40,8,spot,instance,7.676005,0.959500625,,DZH318Z0DS6T/000G|9a95e0fa-8d7e-5337-8251-3503d9847d45
+2026-10-13,azure,westus2,Standard_ND96asr_v4,A100-40GB,A100,40,8,on_demand,instance,27.197,3.399625,,DZH318Z0DS6T/000D|6fb1e0ed-7ca3-5fb2-90a0-c3b20869ff3b
+2026-10-13,azure,westus2,Standard_ND96asr_v4,A100-40GB,A100,40,8,spot,instance,5.98334,0.7479175,,DZH318Z0DS6T/0007|fcb61587-517f-5e4d-8fe1-33efe09aa3d3
+2026-10-13,azure,australiaeast,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,5.326,5.326,,DZH318Z09TGJ/002V|7d2e207f-c01a-576c-834a-65e8f789e9fe
+2026-10-13,azure,australiaeast,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.984245,0.984245,,DZH318Z09TGJ/0001|d48e4eea-812b-5a66-98f3-633f3d89901b
+2026-10-13,azure,brazilsouth,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,7.346,7.346,,DZH318Z09TGJ/009Q|b3bfea1f-7e1b-5fa6-a0bf-e0792608fbf0
+2026-10-13,azure,brazilsouth,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,1.357541,1.357541,,DZH318Z09TGJ/009Z|848d24c0-f817-509b-ab15-5f3d7fceefc9
+2026-10-13,azure,canadacentral,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.408,4.408,,DZH318Z09TGJ/008D|5bdef294-9a81-5280-9ed9-b7df67ad1629
+2026-10-13,azure,canadacentral,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.814598,0.814598,,DZH318Z09TGJ/008N|2e1b53f7-81d2-58c8-a32b-217c5954c86e
+2026-10-13,azure,centralindia,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,5.142,5.142,,DZH318Z09TGJ/004X|53878f7f-cc9b-55f9-9c02-ae05829d0b20
+2026-10-13,azure,centralindia,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.950242,0.950242,,DZH318Z09TGJ/004V|76fa8c7d-6758-5663-ba72-14871a73cfcc
+2026-10-13,azure,centralus,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.15,4.15,,DZH318Z09TGJ/0038|49d88419-3ee9-5db0-987a-260c2a4fb148
+2026-10-13,azure,centralus,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.76692,0.76692,,DZH318Z09TGJ/0039|8d903cd3-7da3-5730-9ad6-7ba41f7aa4e8
+2026-10-13,azure,eastus,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,3.673,3.673,,DZH318Z09TGJ/002X|814993d2-bf2e-546f-b4d7-34949c13c32e
+2026-10-13,azure,eastus,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.67877,0.67877,,DZH318Z09TGJ/002P|18cad0ee-e240-59aa-9e4e-8dfa5c049852
+2026-10-13,azure,eastus2,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,3.673,3.673,,DZH318Z09TGJ/002S|913f08d5-3b8a-5427-9522-fda75b58efd4
+2026-10-13,azure,eastus2,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.67877,0.67877,,DZH318Z09TGJ/002W|aeec9b4a-4021-550e-b2e7-81d138a3e76a
+2026-10-13,azure,francecentral,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.591,4.591,,DZH318Z09TGJ/0097|14d858c7-0055-5fff-ac7a-7b57dc49f517
+2026-10-13,azure,francecentral,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.848417,0.848417,,DZH318Z09TGJ/0099|27bef1e5-1dc2-546f-ba7c-7c4451b5575a
+2026-10-13,azure,germanywestcentral,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.775,4.775,,DZH318Z09TGJ/008R|886c40d3-cd83-5565-a658-bfacc1df98fa
+2026-10-13,azure,germanywestcentral,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.88242,0.88242,,DZH318Z09TGJ/008S|70b063fc-a12c-5f2d-8f1e-21fde6d6b9b2
+2026-10-13,azure,italynorth,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.775,4.775,,DZH318Z09TGJ/00DJ|9d972b50-ccdb-5af5-a7ff-ed192e8dc554
+2026-10-13,azure,italynorth,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.88242,0.88242,,DZH318Z09TGJ/00DL|97ea7117-11a5-5e02-a054-cc424261c6c7
+2026-10-13,azure,japaneast,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,5.326,5.326,,DZH318Z09TGJ/004N|81d0378e-4f54-543d-9cea-145f68f50267
+2026-10-13,azure,japaneast,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.984245,0.984245,,DZH318Z09TGJ/004Q|e14d3d21-b5ea-57a0-ba9b-a5155e245cfd
+2026-10-13,azure,jioindiacentral,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,5.142,5.142,,DZH318Z09TGJ/007J|feb07c68-26af-525f-8691-9097363539e0
+2026-10-13,azure,jioindiawest,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,5.142,5.142,,DZH318Z09TGJ/0090|08418b06-2747-52b7-a69c-227558651a8f
+2026-10-13,azure,koreacentral,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.959,4.959,,DZH318Z09TGJ/00B3|ec6d613a-a15e-521d-a0b9-660f6ed4f555
+2026-10-13,azure,koreacentral,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.916423,0.916423,,DZH318Z09TGJ/009R|8ac1ddc8-02cf-554f-b391-7ada182328d6
+2026-10-13,azure,northcentralus,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.408,4.408,,DZH318Z09TGJ/0044|9148d8bd-b6d8-592f-8f47-1975def32584
+2026-10-13,azure,northcentralus,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.814598,0.814598,,DZH318Z09TGJ/0046|ab8a100e-3b30-5a48-aad8-68259ef6f3ff
+2026-10-13,azure,northeurope,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.408,4.408,,DZH318Z09TGJ/002T|2a092218-18ee-5aa0-a8e6-30c7e641be23
+2026-10-13,azure,northeurope,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.814598,0.814598,,DZH318Z09TGJ/0008|5ed4107e-814e-54f3-94b3-273a4986719c
+2026-10-13,azure,polandcentral,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.775,4.775,,DZH318Z09TGJ/00GT|1256883f-9817-5e20-8f74-ee5b7e468aca
+2026-10-13,azure,polandcentral,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.88242,0.88242,,DZH318Z09TGJ/00G9|a36a8b17-18e3-5600-b665-e02fb8467d64
+2026-10-13,azure,southcentralus,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.408,4.408,,DZH318Z09TGJ/001N|424d3026-ab33-5c4e-8c38-3134530a8bc5
+2026-10-13,azure,southcentralus,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.814598,0.814598,,DZH318Z09TGJ/001X|b93fc77f-68af-5d0b-95fc-f294267fa779
+2026-10-13,azure,southeastasia,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.775,4.775,,DZH318Z09TGJ/0027|bf0db2c5-1132-559f-bdb3-baf4c576b4b4
+2026-10-13,azure,southeastasia,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.88242,0.88242,,DZH318Z09TGJ/002C|3cdf946f-49f5-5541-99bd-a3f645ba188b
+2026-10-13,azure,spaincentral,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.775,4.775,,DZH318Z09TGJ/00QL|7567eace-f22b-597b-ac8b-7debb48a5dc0
+2026-10-13,azure,spaincentral,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.88242,0.88242,,DZH318Z09TGJ/00QV|6bd72004-fc43-5dc7-87d4-223fc1d7a378
+2026-10-13,azure,swedencentral,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.775,4.775,,DZH318Z09TGJ/007P|aefa9efb-4945-50f5-9d41-43c2a7d75c9d
+2026-10-13,azure,swedencentral,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.937332,0.937332,,DZH318Z09TGJ/007H|b493ce40-2cbc-5d7d-b0b9-d261ce8fa193
+2026-10-13,azure,switzerlandnorth,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,5.252,5.252,,DZH318Z09TGJ/00B0|6559555c-b515-5e81-a5bc-4ceb3f1700d0
+2026-10-13,azure,switzerlandnorth,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.97057,0.97057,,DZH318Z09TGJ/009X|5aface61-807f-5c9b-a37e-914dabbc536b
+2026-10-13,azure,uksouth,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.591,4.591,,DZH318Z09TGJ/002F|ab8b356c-4f16-583b-a26b-1cb5a8de6e8a
+2026-10-13,azure,uksouth,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.848417,0.848417,,DZH318Z09TGJ/002B|815ea81b-655a-57d6-8260-98c34d4b0ff4
+2026-10-13,azure,westeurope,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.775,4.775,,DZH318Z09TGJ/0026|9bb4061e-2703-51e4-ba90-455804907f3b
+2026-10-13,azure,westeurope,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.88242,0.88242,,DZH318Z09TGJ/001Z|dba8162c-0801-5621-9ccc-f264e692920d
+2026-10-13,azure,westus,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,4.775,4.775,,DZH318Z09TGJ/0058|0c2cbd66-e569-5e12-984e-f974c1394e6d
+2026-10-13,azure,westus,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.88242,0.88242,,DZH318Z09TGJ/0059|cce40fd3-8842-5dcd-a912-b9a3fa782a5d
+2026-10-13,azure,westus2,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,3.673,3.673,,DZH318Z09TGJ/001F|2c8e2524-e027-5577-89fe-8fe964fa0034
+2026-10-13,azure,westus2,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.67877,0.67877,,DZH318Z09TGJ/001J|947f840f-f120-52f3-928f-76d50877c78e
+2026-10-13,azure,westus3,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,on_demand,instance,3.673,3.673,,DZH318Z09TGJ/001K|02e920ad-0b32-5221-84d0-99b6e54c215d
+2026-10-13,azure,westus3,Standard_NC24ads_A100_v4,A100-80GB,A100,80,1,spot,instance,0.67877,0.67877,,DZH318Z09TGJ/001Q|2d3c78f3-21e1-51d0-8f81-bce5e3d0cf58
+2026-10-13,azure,australiaeast,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,10.652,5.326,,DZH318Z09TGJ/002J|8e1309e1-bf01-59b8-8477-9cca56fd60c5
+2026-10-13,azure,australiaeast,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.96849,0.984245,,DZH318Z09TGJ/002G|13b70b85-a85e-5f4b-8669-23317afbf4ce
+2026-10-13,azure,brazilsouth,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,14.692,7.346,,DZH318Z09TGJ/009H|2cfa078f-6ab0-55c2-94c5-93c85c342c7e
+2026-10-13,azure,brazilsouth,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,2.715082,1.357541,,DZH318Z09TGJ/0098|b28cb33f-7f4f-5fde-b6bd-5dce11481fd2
+2026-10-13,azure,canadacentral,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,8.815,4.4075,,DZH318Z09TGJ/008H|810d3b54-5266-5b16-ab45-dc6b364296d4
+2026-10-13,azure,canadacentral,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.629012,0.814506,,DZH318Z09TGJ/007V|1f8e5b69-162e-572c-909b-61801f647364
+2026-10-13,azure,centralindia,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,10.284,5.142,,DZH318Z09TGJ/005C|b4e24449-5527-5b5a-8706-61459ddc401a
+2026-10-13,azure,centralindia,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.900483,0.9502415,,DZH318Z09TGJ/005D|65f57d64-b5fc-55a8-bcac-2e362ad817bc
+2026-10-13,azure,centralus,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,8.301,4.1505,,DZH318Z09TGJ/0036|3e57ca2b-6f9e-5813-954d-3ca50848f7e7
+2026-10-13,azure,centralus,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.534025,0.7670125,,DZH318Z09TGJ/0032|564e5f4e-5ecb-5a33-8c4e-8f023a8d575f
+2026-10-13,azure,eastus,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,7.346,3.673,,DZH318Z09TGJ/001S|3ce57556-3ce9-5a15-ab37-6748b81a68a8
+2026-10-13,azure,eastus,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.357541,0.6787705,,DZH318Z09TGJ/001R|8cd9dd90-fd6e-526c-ac1e-4188c4bf910f
+2026-10-13,azure,eastus2,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,7.346,3.673,,DZH318Z09TGJ/002Q|00230cfc-461f-54a1-80ac-cdacb8293e3c
+2026-10-13,azure,eastus2,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.357541,0.6787705,,DZH318Z09TGJ/002N|3f21f5ab-c863-5549-a53c-9eb56082fcf9
+2026-10-13,azure,francecentral,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,9.183,4.5915,,DZH318Z09TGJ/009N|ebdd4301-ea81-5630-8cec-851cc0314df6
+2026-10-13,azure,francecentral,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.697018,0.848509,,DZH318Z09TGJ/0095|5d08c212-bc28-5b2d-b9ac-a8aade5b9719
+2026-10-13,azure,germanywestcentral,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,9.55,4.775,,DZH318Z09TGJ/008P|80ab5640-c1da-50ea-a548-859adc047e95
+2026-10-13,azure,germanywestcentral,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.76484,0.88242,,DZH318Z09TGJ/008X|4f29c401-9adc-5dad-9942-f0a710f610d1
+2026-10-13,azure,italynorth,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,9.55,4.775,,DZH318Z09TGJ/00DR|05617c7d-9fcd-5088-bbd3-a6291799c674
+2026-10-13,azure,italynorth,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.76484,0.88242,,DZH318Z09TGJ/00DN|9da745ad-93d0-5713-8d27-738f94301311
+2026-10-13,azure,japaneast,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,10.652,5.326,,DZH318Z09TGJ/004M|be601186-f8bf-5096-bdc8-d338d695c4b9
+2026-10-13,azure,japaneast,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.96849,0.984245,,DZH318Z09TGJ/004R|aea741fd-956b-524c-9774-a5d84c42e5b9
+2026-10-13,azure,jioindiacentral,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,10.284,5.142,,DZH318Z09TGJ/007S|2f998213-1fd1-578c-84c8-3beafc00131a
+2026-10-13,azure,jioindiawest,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,10.284,5.142,,DZH318Z09TGJ/008W|c93cf903-2555-5b6a-8703-6ad1ddb1732e
+2026-10-13,azure,koreacentral,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,9.917,4.9585,,DZH318Z09TGJ/00B6|8cd6a911-1e3c-55a0-8d2a-04c4ccf89f3b
+2026-10-13,azure,koreacentral,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.832662,0.916331,,DZH318Z09TGJ/009W|85b2e176-f60e-5808-b343-9740c9cee73c
+2026-10-13,azure,northcentralus,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,8.815,4.4075,,DZH318Z09TGJ/0041|23fdb03d-0588-5e24-9a5e-8e71de7ee87c
+2026-10-13,azure,northcentralus,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.629012,0.814506,,DZH318Z09TGJ/0043|ec9f52ca-1162-5fa1-9835-acb9c1662277
+2026-10-13,azure,northeurope,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,8.815,4.4075,,DZH318Z09TGJ/002L|2b823785-c9c9-5cd9-98d2-0afc9982fc78
+2026-10-13,azure,northeurope,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.629012,0.814506,,DZH318Z09TGJ/0003|f4e228a4-fd80-599d-b3d4-3443a555825d
+2026-10-13,azure,polandcentral,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,9.55,4.775,,DZH318Z09TGJ/00GW|e7b07677-dd27-5c20-afdd-ca182738fed2
+2026-10-13,azure,polandcentral,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.76484,0.88242,,DZH318Z09TGJ/00H6|65cb30f6-6e40-5227-b1af-be3f9259e720
+2026-10-13,azure,southcentralus,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,8.815,4.4075,,DZH318Z09TGJ/0015|fd225db4-894b-59d5-9540-c2ee40601725
+2026-10-13,azure,southcentralus,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.629012,0.814506,,DZH318Z09TGJ/0017|c3d2ff8a-4265-5dab-b8cd-da1bf77b20c8
+2026-10-13,azure,southeastasia,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,9.55,4.775,,DZH318Z09TGJ/0022|bf030d13-c521-562f-bf5e-f1f6a53a41e2
+2026-10-13,azure,southeastasia,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.76484,0.88242,,DZH318Z09TGJ/0029|aa0555f7-d3f7-52d0-8020-2e6bc5568ae9
+2026-10-13,azure,spaincentral,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,9.55,4.775,,DZH318Z09TGJ/00Q2|195721af-2c27-511b-8bd9-cb6f32964507
+2026-10-13,azure,spaincentral,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.76484,0.88242,,DZH318Z09TGJ/00QC|d9375207-1ac9-5ec0-9a56-6c06d905dfb8
+2026-10-13,azure,swedencentral,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,9.55,4.775,,DZH318Z09TGJ/007M|8c7e02aa-2f2b-5c9c-9da0-2ee03d54eb66
+2026-10-13,azure,swedencentral,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.874665,0.9373325,,DZH318Z09TGJ/007G|e4b57c63-7775-54d4-ab06-c82f86850a4e
+2026-10-13,azure,switzerlandnorth,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,10.505,5.2525,,DZH318Z09TGJ/00B4|381707bf-7513-5675-b371-df79dbfc73a8
+2026-10-13,azure,switzerlandnorth,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.941324,0.970662,,DZH318Z09TGJ/009T|9bc054e1-accc-57c9-99c9-1385b1b07508
+2026-10-13,azure,uksouth,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,9.183,4.5915,,DZH318Z09TGJ/0020|656f24eb-1ca4-5b62-9bed-198ba108ff74
+2026-10-13,azure,uksouth,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.697018,0.848509,,DZH318Z09TGJ/001V|1fff7bb6-aa96-57df-acf3-258c6f58914e
+2026-10-13,azure,westeurope,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,9.55,4.775,,DZH318Z09TGJ/001G|89f76d5f-e627-5cc8-a012-94724283557b
+2026-10-13,azure,westeurope,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.76484,0.88242,,DZH318Z09TGJ/001D|11777ff2-6974-5e8c-864a-158a166a2ccc
+2026-10-13,azure,westus,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,9.55,4.775,,DZH318Z09TGJ/0053|06f6e6ec-5a79-5d0e-bd02-be5d5ad8f83e
+2026-10-13,azure,westus,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.76484,0.88242,,DZH318Z09TGJ/0052|b8d61b39-7fa3-5739-9140-61e4542e6a16
+2026-10-13,azure,westus2,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,7.346,3.673,,DZH318Z09TGJ/001M|79115761-1102-576a-addb-fcb584352add
+2026-10-13,azure,westus2,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.357541,0.6787705,,DZH318Z09TGJ/0019|4e2485fc-befc-5c3d-b00a-dbb92d3ae9dd
+2026-10-13,azure,westus3,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,on_demand,instance,7.346,3.673,,DZH318Z09TGJ/001B|6973d613-d7b7-583c-a5c1-f147ba1a4161
+2026-10-13,azure,westus3,Standard_NC48ads_A100_v4,A100-80GB,A100,80,2,spot,instance,1.357541,0.6787705,,DZH318Z09TGJ/0010|4a4e0a5f-815b-528e-9aa9-6a435b8680a7
+2026-10-13,azure,australiaeast,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,21.303,5.32575,,DZH318Z09TGJ/0011|fe0a4799-f9c4-5e8a-a077-c337fec19dc3
+2026-10-13,azure,australiaeast,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.936794,0.9841985,,DZH318Z09TGJ/0004|6f3f09e0-2047-54c3-8b40-99cabb6e3bc2
+2026-10-13,azure,brazilsouth,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,29.384,7.346,,DZH318Z09TGJ/0096|7db4df47-1ca4-589c-9fa5-b3fdba5eb41d
+2026-10-13,azure,brazilsouth,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,5.430163,1.35754075,,DZH318Z09TGJ/009F|d325356b-70b0-5bea-802e-e969d774aa6c
+2026-10-13,azure,canadacentral,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,17.63,4.4075,,DZH318Z09TGJ/008M|aa3de916-dfd1-5161-bd9d-ced1d89e6313
+2026-10-13,azure,canadacentral,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.258024,0.814506,,DZH318Z09TGJ/0081|bff5fdd2-ac8e-5538-9093-642c1a06889a
+2026-10-13,azure,centralindia,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,20.569,5.14225,,DZH318Z09TGJ/0055|f8db4aad-1d21-50a5-92fb-be68a881498c
+2026-10-13,azure,centralindia,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.801151,0.95028775,,DZH318Z09TGJ/004T|507f0e08-bc47-5fe8-a42f-470f2684d61a
+2026-10-13,azure,centralus,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,16.602,4.1505,,DZH318Z09TGJ/0037|82520862-14ed-5005-95a9-bf3294444780
+2026-10-13,azure,centralus,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.06805,0.7670125,,DZH318Z09TGJ/0031|36f7f53a-cfdf-5df2-b0b0-43659800e7a1
+2026-10-13,azure,eastus,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,14.692,3.673,,DZH318Z09TGJ/000V|8bdc3797-843e-55cf-b6cb-0d4e11881577
+2026-10-13,azure,eastus,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,2.715082,0.6787705,,DZH318Z09TGJ/000C|30a5565b-6f9e-52c6-b3f8-7770c9ce4003
+2026-10-13,azure,eastus2,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,14.692,3.673,,DZH318Z09TGJ/001L|5db84607-94d7-5f3f-8280-dba2c51375be
+2026-10-13,azure,eastus2,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,2.715082,0.6787705,,DZH318Z09TGJ/0002|23ab239b-3d53-5701-99dd-97cccc713901
+2026-10-13,azure,francecentral,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,18.365,4.59125,,DZH318Z09TGJ/009J|88c0226d-819a-53c6-9373-d04db3996e99
+2026-10-13,azure,francecentral,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.393852,0.848463,,DZH318Z09TGJ/009C|fcfa9485-85c5-534f-87cd-61f5838a7b83
+2026-10-13,azure,germanywestcentral,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,19.1,4.775,,DZH318Z09TGJ/007Z|8de14ed5-1b89-583d-81bd-8c76ef48d667
+2026-10-13,azure,germanywestcentral,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.52968,0.88242,,DZH318Z09TGJ/007X|91770093-0126-5f58-b95b-0ab41c930e6d
+2026-10-13,azure,italynorth,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,19.1,4.775,,DZH318Z09TGJ/00DS|5b7cb2bb-ddc8-52c4-bc71-496efac89ff7
+2026-10-13,azure,italynorth,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.52968,0.88242,,DZH318Z09TGJ/00DP|959b6e3f-6b60-5fb7-a999-89937dcb1619
+2026-10-13,azure,japaneast,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,21.303,5.32575,,DZH318Z09TGJ/004K|17837c2d-3eb0-568d-a5b1-780efe491de9
+2026-10-13,azure,japaneast,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.936794,0.9841985,,DZH318Z09TGJ/004L|7fc2dca8-11cb-54f6-a732-45126628655c
+2026-10-13,azure,jioindiacentral,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,20.569,5.14225,,DZH318Z09TGJ/007K|1a9bf979-0d8e-5bcc-b5f7-c84057811d08
+2026-10-13,azure,jioindiawest,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,20.569,5.14225,,DZH318Z09TGJ/008F|531bed08-9751-50a2-afc6-90e25786e603
+2026-10-13,azure,koreacentral,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,19.834,4.9585,,DZH318Z09TGJ/009K|bbe359c5-1f84-500d-9537-f014a0480596
+2026-10-13,azure,koreacentral,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.665323,0.91633075,,DZH318Z09TGJ/0091|3134f896-def0-5016-b2de-953ef4f624af
+2026-10-13,azure,northcentralus,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,17.63,4.4075,,DZH318Z09TGJ/003Z|e0feb6f3-1bcd-5b17-a1c8-115c1d3c8a91
+2026-10-13,azure,northcentralus,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.258024,0.814506,,DZH318Z09TGJ/003X|5980b4d8-06ff-53ec-b7f5-e014d142f84b
+2026-10-13,azure,northeurope,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,17.63,4.4075,,DZH318Z09TGJ/0024|325d73e2-c08a-5ecd-a61c-30cdc824878d
+2026-10-13,azure,northeurope,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.258024,0.814506,,DZH318Z09TGJ/0007|2044b4d7-c0cd-5b68-a6c3-0ae2ed56f5fc
+2026-10-13,azure,polandcentral,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,19.1,4.775,,DZH318Z09TGJ/00FP|542190d2-b1ba-50f7-9865-8da91ca7225a
+2026-10-13,azure,polandcentral,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.52968,0.88242,,DZH318Z09TGJ/00FW|472fb85c-001e-5173-8578-5a039b28c666
+2026-10-13,azure,southcentralus,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,17.63,4.4075,,DZH318Z09TGJ/000D|6a52adca-34b2-5f04-b90a-f44c0c6b5458
+2026-10-13,azure,southcentralus,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.258024,0.814506,,DZH318Z09TGJ/000H|1a893ee2-a412-5eec-be37-bfd6de30bc6c
+2026-10-13,azure,southeastasia,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,19.1,4.775,,DZH318Z09TGJ/000T|81b3e92f-c0e5-5a79-8fe4-b13e5337026b
+2026-10-13,azure,southeastasia,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.52968,0.88242,,DZH318Z09TGJ/0006|992667c0-71aa-521c-a2f3-cf2044d48d7a
+2026-10-13,azure,spaincentral,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,19.1,4.775,,DZH318Z09TGJ/00QK|916895f1-6935-57a8-849f-23c6a10958e0
+2026-10-13,azure,spaincentral,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.52968,0.88242,,DZH318Z09TGJ/00QQ|d89aa437-bdae-514a-a69a-8e0f6a391f15
+2026-10-13,azure,swedencentral,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,19.1,4.775,,DZH318Z09TGJ/007F|22c8582a-bb8e-52b3-abf4-ba83c976f60a
+2026-10-13,azure,swedencentral,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.74933,0.9373325,,DZH318Z09TGJ/007Q|a577d533-5255-54b8-9d06-83f4a3086d21
+2026-10-13,azure,switzerlandnorth,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,21.01,5.2525,,DZH318Z09TGJ/0094|428f89b6-6a39-5824-9e84-2640147f6fa1
+2026-10-13,azure,switzerlandnorth,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.882648,0.970662,,DZH318Z09TGJ/008Z|478a72e5-d8ed-55f1-aec2-8882c94bfb0c
+2026-10-13,azure,uksouth,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,18.365,4.59125,,DZH318Z09TGJ/000J|92f33974-327f-54c1-b4d5-86b52fbcf3a2
+2026-10-13,azure,uksouth,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.393852,0.848463,,DZH318Z09TGJ/0005|955484b1-ac58-59a5-be5d-5e59b5a616be
+2026-10-13,azure,westeurope,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,19.1,4.775,,DZH318Z09TGJ/000K|c498b729-83ed-5c0e-ad4a-9cc86f036e73
+2026-10-13,azure,westeurope,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.52968,0.88242,,DZH318Z09TGJ/000B|1ef2a21b-1737-5a2e-854f-400d49af6d7b
+2026-10-13,azure,westus,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,19.1,4.775,,DZH318Z09TGJ/0056|3322f069-8131-5f0f-adfc-51309b27acee
+2026-10-13,azure,westus,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,3.52968,0.88242,,DZH318Z09TGJ/004Z|ece9c067-4b1b-590c-89d8-7acb74680f96
+2026-10-13,azure,westus2,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,14.692,3.673,,DZH318Z09TGJ/000L|1f36685a-d50f-580d-a7cf-221aaeace447
+2026-10-13,azure,westus2,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,2.715082,0.6787705,,DZH318Z09TGJ/0009|905d169f-f8f3-596a-bdf9-4237c3c86f9d
+2026-10-13,azure,westus3,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,on_demand,instance,14.692,3.673,,DZH318Z09TGJ/000G|f14ea436-0eed-58cf-8ee2-499b25547e3c
+2026-10-13,azure,westus3,Standard_NC96ads_A100_v4,A100-80GB,A100,80,4,spot,instance,2.715082,0.6787705,,DZH318Z09TGJ/000F|1dba60dc-b64e-5e8c-bd5e-3b2cc422b6bb
+2026-10-13,azure,australiaeast,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,47.516,5.9395,,DZH318Z08MBM/0009|4886d9f0-4857-5cdd-b6c7-765618dcbdca
+2026-10-13,azure,australiaeast,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,12.240122,1.53001525,,DZH318Z08MBM/0001|84ac8751-7905-51e7-bcee-1c9a862abba6
+2026-10-13,azure,brazilsouth,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,65.54,8.1925,,DZH318Z08MBM/00B0|d606f6d4-8b44-5873-ba18-4363244eedb5
+2026-10-13,azure,brazilsouth,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,16.883104,2.110388,,DZH318Z08MBM/009Q|8633f5af-1c8b-5440-80d7-8c1f0dc60311
+2026-10-13,azure,canadacentral,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,39.324,4.9155,,DZH318Z08MBM/004H|4c0b622d-3c52-5655-bac7-5b2aef1a3039
+2026-10-13,azure,canadacentral,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,10.129862,1.26623275,,DZH318Z08MBM/004G|dae3944c-869a-5ac3-82af-cbc79950f822
+2026-10-13,azure,canadaeast,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,39.324,4.9155,,DZH318Z08MBM/0080|9a846c8b-5303-5d7c-b47f-022d796421b6
+2026-10-13,azure,canadaeast,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,10.129862,1.26623275,,DZH318Z08MBM/0084|b5b250f0-e319-554f-bc42-bfee0f4f70d1
+2026-10-13,azure,centralus,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,37.03,4.62875,,DZH318Z08MBM/0011|3e6fbc1f-9d89-5e60-a499-5cc2dfa2bc17
+2026-10-13,azure,centralus,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,7.631883,0.953985375,,DZH318Z08MBM/0013|bb20654c-d3e6-5a88-9534-85995d2634db
+2026-10-13,azure,eastus,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,32.77,4.09625,,DZH318Z08MBM/000F|86557a00-3f25-5945-a72e-b6b60823d2ef
+2026-10-13,azure,eastus,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,8.441552,1.055194,,DZH318Z08MBM/0003|6b0b5ed1-b240-549c-85d0-fdcbc81a6311
+2026-10-13,azure,eastus2,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,32.77,4.09625,,DZH318Z08MBM/000Q|8437e458-ab54-5c0e-8538-78d4650531e7
+2026-10-13,azure,eastus2,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,8.441552,1.055194,,DZH318Z08MBM/0006|30e70cb6-b839-57eb-af8d-95f6f5606ca0
+2026-10-13,azure,francecentral,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,40.962,5.12025,,DZH318Z08MBM/005R|8bd6c241-b3c3-5eff-b067-15a0af060bbe
+2026-10-13,azure,francecentral,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,10.551811,1.318976375,,DZH318Z08MBM/005M|14bf561c-12b1-5a70-89ce-b9e38c15c94f
+2026-10-13,azure,germanynorth,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,55.381,6.922625,,DZH318Z08MBM/0070|92688a8b-da49-5c68-806d-1a0c91176e01
+2026-10-13,azure,germanynorth,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,14.266146,1.78326825,,DZH318Z08MBM/006R|14c05004-7679-5953-a644-28c3a98a1945
+2026-10-13,azure,italynorth,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,40.962,5.12025,,DZH318Z08MBM/0064|0c48593a-5936-5024-9858-753df4d6c9ed
+2026-10-13,azure,italynorth,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,12.886645,1.610830625,,DZH318Z08MBM/006H|1ddfca83-6492-508d-878f-a1e79e3bac8a
+2026-10-13,azure,japaneast,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,47.517,5.939625,,DZH318Z08MBM/00F6|0e63ba47-a1f4-5c03-ae13-a9d6b3a6546f
+2026-10-13,azure,japaneast,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,12.240379,1.530047375,,DZH318Z08MBM/00F0|3df9f49e-7387-5d39-8f6a-38f81cf1cdf6
+2026-10-13,azure,japanwest,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,50.794,6.34925,,DZH318Z08MBM/007W|b76d1b4d-07ca-5d69-b115-a2c74bb2e86f
+2026-10-13,azure,japanwest,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,13.084534,1.63556675,,DZH318Z08MBM/0087|921b462c-af1c-508e-bbfb-fe842e3e54a1
+2026-10-13,azure,norwayeast,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,46.861,5.857625,,DZH318Z08MBM/005L|cdfd661b-ace7-52ec-9ab5-6b1310140300
+2026-10-13,azure,norwayeast,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,12.071394,1.50892425,,DZH318Z08MBM/005T|0bbe470e-5692-50f0-93f3-eb9e8da85b79
+2026-10-13,azure,polandcentral,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,46.89,5.86125,,DZH318Z08MBM/006V|58e9cbaa-50e2-5dc1-a58f-3e82078fcbbe
+2026-10-13,azure,polandcentral,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,12.078864,1.509858,,DZH318Z08MBM/006N|f2b3452c-0033-54b5-bf6e-04c1e1e0ad57
+2026-10-13,azure,southafricanorth,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,47.844,5.9805,,DZH318Z08MBM/0067|1e3f9dea-a9fb-5818-adde-4e6c8488fc74
+2026-10-13,azure,southafricanorth,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,12.324614,1.54057675,,DZH318Z08MBM/006D|610b8e3c-d312-525d-ab12-a0a7e132d42e
+2026-10-13,azure,southcentralus,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,39.324,4.9155,,DZH318Z08MBM/000W|d9e0dd77-e862-54f3-ae38-256120c7b6a7
+2026-10-13,azure,southcentralus,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,10.129862,1.26623275,,DZH318Z08MBM/0008|c0ff4ebc-ed66-5d8a-9d00-3e315b8e9b3a
+2026-10-13,azure,southindia,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,49.483,6.185375,,DZH318Z08MBM/00DH|af1a175b-a820-57d2-b2f2-dbcfb43da30e
+2026-10-13,azure,southindia,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,12.746821,1.593352625,,DZH318Z08MBM/00DT|9d22e2a9-4253-5fe8-b133-6ec74b4d0d79
+2026-10-13,azure,spaincentral,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,40.962,5.12025,,DZH318Z08MBM/0047|cecfe9fe-ff41-5968-b4eb-a53be5917820
+2026-10-13,azure,spaincentral,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,10.551811,1.318976375,,DZH318Z08MBM/0049|1d9cb1ce-fd11-589f-ae21-4310e81d7a53
+2026-10-13,azure,swedencentral,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,40.962,5.12025,,DZH318Z08MBM/0042|b4524373-bc84-5e05-be58-d3f587007220
+2026-10-13,azure,swedencentral,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,10.551811,1.318976375,,DZH318Z08MBM/0043|15ae9d3b-e152-5292-95f7-935696b0fb4c
+2026-10-13,azure,switzerlandnorth,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,46.861,5.857625,,DZH318Z08MBM/001Q|5d0bf297-50fc-5e68-9a35-6674ec630d2b
+2026-10-13,azure,switzerlandnorth,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,12.071394,1.50892425,,DZH318Z08MBM/001R|b91f28b1-f8cc-58b9-a059-aed2008fee72
+2026-10-13,azure,switzerlandwest,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,60.919,7.614875,,DZH318Z08MBM/00B7|cd158cec-d034-55fe-8558-42764a15cd13
+2026-10-13,azure,switzerlandwest,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,15.692734,1.96159175,,DZH318Z08MBM/00B8|1e192de4-a5e1-5ce5-b37a-1b85ca8aadad
+2026-10-13,azure,uaecentral,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,60.919,7.614875,,DZH318Z08MBM/0060|e7d86f91-adfc-5638-8c34-a26a1c6d3872
+2026-10-13,azure,uaecentral,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,15.692734,1.96159175,,DZH318Z08MBM/005F|e712ae14-b530-5511-9b2c-e78d43ae692b
+2026-10-13,azure,uaenorth,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,46.861,5.857625,,DZH318Z08MBM/0051|ea2b1e74-2074-5a0e-a38d-8f864c62cff0
+2026-10-13,azure,uaenorth,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,12.071394,1.50892425,,DZH318Z08MBM/005G|8357ea87-a4db-52aa-a3ab-3855c766af03
+2026-10-13,azure,uksouth,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,40.962,5.12025,,DZH318Z08MBM/000S|ce7f0f2d-3221-533b-af78-5056c5655b8f
+2026-10-13,azure,uksouth,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,12.886645,1.610830625,,DZH318Z08MBM/000B|3fb34370-61c3-52f0-932b-4a1a0e56329c
+2026-10-13,azure,ukwest,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,42.929,5.366125,,DZH318Z08MBM/004X|c7b98595-ada5-5921-8167-98fcf9995659
+2026-10-13,azure,ukwest,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,11.05851,1.38231375,,DZH318Z08MBM/004M|1103a8a7-a6d9-55fb-a44f-8d9e16ac2164
+2026-10-13,azure,westeurope,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,40.962,5.12025,,DZH318Z08MBM/000V|2a24fcf7-144d-5bbb-a23f-74acb1eeee9c
+2026-10-13,azure,westeurope,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,10.551811,1.318976375,,DZH318Z08MBM/0004|09d61d20-c801-586d-8c52-d54b974086ed
+2026-10-13,azure,westus,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,42.601,5.325125,,DZH318Z08MBM/0068|ea935771-f113-5c08-9d22-479187310057
+2026-10-13,azure,westus,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,10.974018,1.37175225,,DZH318Z08MBM/006F|aef089ce-1985-5dd7-8ed0-d369dfa361e2
+2026-10-13,azure,westus2,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,32.77,4.09625,,DZH318Z08MBM/000R|85f91c7d-9487-5a17-b86c-d215cb44f130
+2026-10-13,azure,westus2,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,8.441552,1.055194,,DZH318Z08MBM/0005|af422fef-2a96-58fd-b0fa-314f708b86bc
+2026-10-13,azure,westus3,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,on_demand,instance,32.77,4.09625,,DZH318Z08MBM/0016|756cde60-5799-5fb0-b64a-78bcdfabf5ea
+2026-10-13,azure,westus3,Standard_ND96amsr_A100_v4,A100-80GB,A100,80,8,spot,instance,8.441552,1.055194,,DZH318Z08MBM/0014|ddff592d-170d-5260-9d5f-9076d96cfe1f
+2026-10-13,azure,australiaeast,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,10.121,10.121,,DZH318Z0F8W2/0039|85515ab4-e907-5835-84d2-84f1fa6ff69b
+2026-10-13,azure,australiaeast,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.870361,1.870361,,DZH318Z0F8W2/003D|cac8d577-3102-506e-b6e0-02195273b3d7
+2026-10-13,azure,canadacentral,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,8.59,8.59,,DZH318Z0F8W2/008J|93082ef1-a43c-5997-aa90-400b250e3d27
+2026-10-13,azure,canadacentral,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.587432,1.587432,,DZH318Z0F8W2/008P|142382bc-573a-5669-91a7-59c45e04bc69
+2026-10-13,azure,centralindia,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,9.772,9.772,,DZH318Z0F8W2/002W|fa1b707a-7575-5b24-9bbd-343065939e7b
+2026-10-13,azure,centralindia,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,4.964176,4.964176,,DZH318Z0F8W2/002R|d8aa3c04-324e-576e-be46-cddcabb51cd6
+2026-10-13,azure,centralus,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,8.585,8.585,,DZH318Z0F8W2/0095|957606dd-faa2-5895-aa2f-91813c816765
+2026-10-13,azure,centralus,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.586508,1.586508,,DZH318Z0F8W2/009B|efa4899a-fb0e-5590-8af0-63b8e5da4606
+2026-10-13,azure,eastus,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,6.98,6.98,,DZH318Z0F8W2/000N|5e4e09e8-bed6-54d4-a3d4-2fb7cbd80124
+2026-10-13,azure,eastus,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.289904,1.289904,,DZH318Z0F8W2/000R|24a5292b-d454-56d5-9f54-fac7bb910f3e
+2026-10-13,azure,eastus2,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,6.98,6.98,,DZH318Z0F8W2/0024|d169ab11-0d52-5c3b-ac1a-a3d3cf602d4d
+2026-10-13,azure,eastus2,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,3.216384,3.216384,,DZH318Z0F8W2/0026|b2698de9-3fb8-58ca-82b7-e191e103b6a8
+2026-10-13,azure,germanywestcentral,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,9.074,9.074,,DZH318Z0F8W2/002F|a1e2d75b-c71a-5c69-bf22-980bb3c73636
+2026-10-13,azure,germanywestcentral,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.676875,1.676875,,DZH318Z0F8W2/002G|b0d71144-6ec7-566e-9cef-469a3acb53ae
+2026-10-13,azure,indonesiacentral,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,8.167,8.167,,DZH318Z0F8W2/008R|c6d54203-eb13-58f2-a886-bbfde334310f
+2026-10-13,azure,indonesiacentral,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.660351,1.660351,,DZH318Z0F8W2/008V|c6d1d55c-97c1-587b-bdec-8959e3e430f1
+2026-10-13,azure,japaneast,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,10.121,10.121,,DZH318Z0F8W2/001W|be59620c-1ba8-538e-abe9-75ed3f0754b6
+2026-10-13,azure,japaneast,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,3.283252,3.283252,,DZH318Z0F8W2/001R|3a382263-9f66-5f30-bcc0-c0873936c6ee
+2026-10-13,azure,jioindiacentral,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,9.772,9.772,,DZH318Z0F8W2/006P|9675b3bb-43f2-58ac-b732-233623225d52
+2026-10-13,azure,jioindiawest,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,9.772,9.772,,DZH318Z0F8W2/006V|09293648-fbd6-526c-b4ef-5cd88edd97bc
+2026-10-13,azure,koreacentral,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,9.423,9.423,,DZH318Z0F8W2/002Z|4b59b721-ba32-5c1f-bd1d-fcbcbf299cfc
+2026-10-13,azure,koreacentral,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,2.14279,2.14279,,DZH318Z0F8W2/001B|4faa4336-9d13-5bb9-90e2-e39ce5d0473c
+2026-10-13,azure,koreasouth,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,8.725,8.725,,DZH318Z0F8W2/0078|0cc86487-a08f-5236-ba9c-7397151480f8
+2026-10-13,azure,koreasouth,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.61238,1.61238,,DZH318Z0F8W2/007B|346b0734-2bf9-5b04-b846-b37454a94e7e
+2026-10-13,azure,malaysiawest,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,8.167,8.167,,DZH318Z0F8W2/0070|268960c6-223e-55a9-8d51-7cb69b9840a3
+2026-10-13,azure,malaysiawest,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,2.007449,2.007449,,DZH318Z0F8W2/0072|26b74c5b-bbed-5a07-afc4-492e213699d8
+2026-10-13,azure,northcentralus,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,8.376,8.376,,DZH318Z0F8W2/009H|747f1aa1-c47f-5d6b-89a8-83cc3c752ce2
+2026-10-13,azure,northcentralus,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.547885,1.547885,,DZH318Z0F8W2/009G|d0a56196-c092-58be-891b-a9fcd1f3d67e
+2026-10-13,azure,northeurope,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,8.376,8.376,,DZH318Z0F8W2/001D|f9f00592-85c9-5303-ade2-62481ac91a0a
+2026-10-13,azure,northeurope,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.547885,1.547885,,DZH318Z0F8W2/001J|6149c6d9-bb48-5487-943b-23cc4f9eeab8
+2026-10-13,azure,southcentralus,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,8.38,8.38,,DZH318Z0F8W2/000Z|25eaf878-5f75-512f-ac37-4106d07fcc68
+2026-10-13,azure,southcentralus,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,2.139414,2.139414,,DZH318Z0F8W2/000V|0cf85c65-038f-5834-a2df-8d4d8a615271
+2026-10-13,azure,southeastasia,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,9.074,9.074,,DZH318Z0F8W2/001P|9ac2f450-1a92-541a-a2f6-b02d5ff00857
+2026-10-13,azure,southeastasia,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.676875,1.676875,,DZH318Z0F8W2/001M|b4c8860e-87e1-5f7f-a982-85f55f538959
+2026-10-13,azure,spaincentral,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,9.074,9.074,,DZH318Z0F8W2/0036|1884926f-9827-555c-8e20-44eabf9fd856
+2026-10-13,azure,spaincentral,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.7903,1.7903,,DZH318Z0F8W2/0037|6edacb69-4ff1-5d3c-adb8-cd3226cd07dc
+2026-10-13,azure,swedencentral,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,9.074,9.074,,DZH318Z0F8W2/0011|9834a969-fa33-509f-b5b6-1f99efedf263
+2026-10-13,azure,swedencentral,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.712264,1.712264,,DZH318Z0F8W2/0016|700413da-5e07-526a-86e4-036d02c43163
+2026-10-13,azure,switzerlandnorth,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,9.981,9.981,,DZH318Z0F8W2/003R|86125ff1-f1fb-541b-b691-dd6b4d88e55c
+2026-10-13,azure,switzerlandnorth,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,2.114974,2.114974,,DZH318Z0F8W2/003Q|d7e2fe94-ffc7-5daa-a63e-bc7e4773e085
+2026-10-13,azure,uaenorth,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,9.98,9.98,,DZH318Z0F8W2/006C|0063c674-dea7-571c-8917-7033a1324177
+2026-10-13,azure,uaenorth,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.844304,1.844304,,DZH318Z0F8W2/006F|04592c33-52ab-5bd4-a41a-0258ab12c2c1
+2026-10-13,azure,uksouth,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,8.725,8.725,,DZH318Z0F8W2/0023|77028984-e375-5389-bfc0-a9a487d536bf
+2026-10-13,azure,uksouth,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.61238,1.61238,,DZH318Z0F8W2/001Z|b68e8487-de7e-561f-8414-c0330528386e
+2026-10-13,azure,ukwest,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,9.14,9.14,,DZH318Z0F8W2/00LT|b9cb0fb4-9936-52b1-b561-4b45ff2814a3
+2026-10-13,azure,ukwest,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.689072,1.689072,,DZH318Z0F8W2/00LS|2255f45d-bafc-5c4b-953d-0c671ee76c9b
+2026-10-13,azure,usgovarizona,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,8.73,8.73,,DZH318Z0F8W2/00LK|d8303a88-caf1-5539-b7b1-9d1310778bb5
+2026-10-13,azure,usgovarizona,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,1.613304,1.613304,,DZH318Z0F8W2/00LQ|538e7ddc-bed6-501f-9e4d-91778bfd3d25
+2026-10-13,azure,westeurope,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,9.08,9.08,,DZH318Z0F8W2/0007|f733d0f6-1c23-53c0-9bb2-c5c16b8053c1
+2026-10-13,azure,westeurope,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,3.346888,3.346888,,DZH318Z0F8W2/0004|96aa5ece-0b52-5f0f-9e7d-ef4d71bbb4ef
+2026-10-13,azure,westus,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,9.074,9.074,,DZH318Z0F8W2/003N|69df410f-0dcb-5003-a430-8d4d3dfdddd8
+2026-10-13,azure,westus,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,4.771109,4.771109,,DZH318Z0F8W2/003J|e3125f05-0a39-523f-8e23-911436cb7f54
+2026-10-13,azure,westus2,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,6.98,6.98,,DZH318Z0F8W2/002J|dabb3143-729b-5b8c-a65f-a068acdecb21
+2026-10-13,azure,westus2,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,3.216384,3.216384,,DZH318Z0F8W2/002N|f505581d-38f9-5172-bbad-ae0e0ea39bb9
+2026-10-13,azure,westus3,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,on_demand,instance,6.98,6.98,,DZH318Z0F8W2/000C|8a40bb0e-b5a6-512e-b57c-b3cb7e4e0db4
+2026-10-13,azure,westus3,Standard_NC40ads_H100_v5,H100 NVL-94GB,H100 NVL,94,1,spot,instance,3.954868,3.954868,,DZH318Z0F8W2/000X|61aca225-7d3b-5625-b80d-b7bfe3377983
+2026-10-13,azure,australiaeast,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,20.242,10.121,,DZH318Z0F8W2/003C|2d14fa7f-2baa-51e4-a632-f5a778880392
+2026-10-13,azure,australiaeast,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,3.740722,1.870361,,DZH318Z0F8W2/003G|487b166f-01c8-5de6-902f-b4788a21a7cd
+2026-10-13,azure,canadacentral,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,17.18,8.59,,DZH318Z0F8W2/008H|38b50b03-6903-54ea-814f-cb779529d7fe
+2026-10-13,azure,canadacentral,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,3.174864,1.587432,,DZH318Z0F8W2/008S|cf98cd93-d74d-5fc9-9d24-d1c1cd8f269e
+2026-10-13,azure,centralindia,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,19.544,9.772,,DZH318Z0F8W2/002V|1bc6ccde-db8d-5373-8795-ead0be0a91cc
+2026-10-13,azure,centralindia,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,9.928352,4.964176,,DZH318Z0F8W2/002T|0f650598-39b1-5176-8f1e-56e181bf7c66
+2026-10-13,azure,centralus,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,17.17,8.585,,DZH318Z0F8W2/0098|2aa30635-95c0-5ac0-9150-c95710da1c0f
+2026-10-13,azure,centralus,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,3.173016,1.586508,,DZH318Z0F8W2/0099|3afaffb1-04e2-514b-9205-c32b382e0eac
+2026-10-13,azure,eastus,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,13.96,6.98,,DZH318Z0F8W2/000F|cfb87d72-01fd-5d47-9459-d0a48af01917
+2026-10-13,azure,eastus,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,2.579808,1.289904,,DZH318Z0F8W2/000J|7062ea2f-9933-56f1-aec0-41e33446a655
+2026-10-13,azure,eastus2,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,13.96,6.98,,DZH318Z0F8W2/0028|e78cdba2-fdd5-5894-a9ca-66143a3bd707
+2026-10-13,azure,eastus2,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,6.432768,3.216384,,DZH318Z0F8W2/0025|b7e9ff78-2bbc-5ac2-831d-73285679a6b7
+2026-10-13,azure,germanywestcentral,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,18.148,9.074,,DZH318Z0F8W2/002D|f1be8c5c-b8ce-588b-a527-ad0a68013162
+2026-10-13,azure,germanywestcentral,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,3.35375,1.676875,,DZH318Z0F8W2/0018|8ae20246-006c-5ee5-81c3-db5dabdbbe01
+2026-10-13,azure,indonesiacentral,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,16.333,8.1665,,DZH318Z0F8W2/008K|4194c748-eaf2-55f1-869c-a6100efd2133
+2026-10-13,azure,indonesiacentral,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,3.320499,1.6602495,,DZH318Z0F8W2/008Q|27faabaa-21e6-5cf8-98db-facbe535dbd8
+2026-10-13,azure,japaneast,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,20.242,10.121,,DZH318Z0F8W2/001T|2d4b64b7-bbda-5d2a-89b3-855b1bdee397
+2026-10-13,azure,japaneast,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,6.566505,3.2832525,,DZH318Z0F8W2/001Q|fcfffe8e-dfdb-5ee1-9ae3-468f71456887
+2026-10-13,azure,jioindiacentral,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,19.544,9.772,,DZH318Z0F8W2/006Q|382ea577-c136-5fab-b1e3-becd16665aa8
+2026-10-13,azure,jioindiawest,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,19.544,9.772,,DZH318Z0F8W2/006T|be74289e-18fb-5af8-93f6-3effbed96ab3
+2026-10-13,azure,koreacentral,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,18.846,9.423,,DZH318Z0F8W2/0030|c3ce95ff-f7b1-50a2-a51c-3187951d4f14
+2026-10-13,azure,koreacentral,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,4.28558,2.14279,,DZH318Z0F8W2/0032|a87bee93-aaed-52ca-afbd-3e7cc0862f06
+2026-10-13,azure,koreasouth,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,17.45,8.725,,DZH318Z0F8W2/0077|d8cc6bb0-0a4b-55d6-bc8f-c8da1d4ebb49
+2026-10-13,azure,koreasouth,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,3.22476,1.61238,,DZH318Z0F8W2/0079|b94067d2-b599-5288-be7d-d5ed47ada615
+2026-10-13,azure,malaysiawest,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,16.333,8.1665,,DZH318Z0F8W2/006Z|155c7bbf-12cb-51c2-ab06-072bcbd9f3cc
+2026-10-13,azure,malaysiawest,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,4.014651,2.0073255,,DZH318Z0F8W2/0074|07b7b44d-823a-5dcb-981a-ad95ae29ca44
+2026-10-13,azure,northcentralus,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,16.752,8.376,,DZH318Z0F8W2/009D|41b3785b-606e-5cbd-b410-60cda64f58cf
+2026-10-13,azure,northcentralus,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,3.09577,1.547885,,DZH318Z0F8W2/009F|da841e56-301c-539a-aa2e-e853277121d4
+2026-10-13,azure,northeurope,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,16.752,8.376,,DZH318Z0F8W2/001C|cbbbc6ca-a748-5e9e-8a20-681b503e4458
+2026-10-13,azure,northeurope,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,3.09577,1.547885,,DZH318Z0F8W2/001H|a957cc00-0591-5383-9b76-c6e552f2eb34
+2026-10-13,azure,southcentralus,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,16.76,8.38,,DZH318Z0F8W2/000H|084046a1-1336-5716-9835-0cc56ccdfcff
+2026-10-13,azure,southcentralus,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,4.278828,2.139414,,DZH318Z0F8W2/000L|21cefdca-42ab-5801-989c-c211d12e1f98
+2026-10-13,azure,southeastasia,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,18.148,9.074,,DZH318Z0F8W2/001L|7dbc2756-c7ad-5f7b-8375-c32ec92a2633
+2026-10-13,azure,southeastasia,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,3.35375,1.676875,,DZH318Z0F8W2/0017|9cfc92e4-95d6-555e-98f7-63dd1ce1ecb7
+2026-10-13,azure,spaincentral,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,18.148,9.074,,DZH318Z0F8W2/0034|96c171dc-6d32-540a-b667-79c491ed1049
+2026-10-13,azure,spaincentral,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,3.5806,1.7903,,DZH318Z0F8W2/0035|9f5b2beb-3ae5-5ab0-87b5-e5c0382aa7d5
+2026-10-13,azure,swedencentral,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,18.148,9.074,,DZH318Z0F8W2/0014|e7a91f49-f3b9-5f9e-9ae8-f9880af56bd3
+2026-10-13,azure,swedencentral,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,3.424528,1.712264,,DZH318Z0F8W2/0015|5a0c3408-042a-561f-86d2-cf63679a24c2
+2026-10-13,azure,switzerlandnorth,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,19.963,9.9815,,DZH318Z0F8W2/003P|128f9082-5072-5fd3-8625-7606e15ed56f
+2026-10-13,azure,switzerlandnorth,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,4.23016,2.11508,,DZH318Z0F8W2/002B|68bffb6d-df79-5663-adef-d2d076313f95
+2026-10-13,azure,uaenorth,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,19.96,9.98,,DZH318Z0F8W2/006D|fef390c8-aad3-5b1e-8cf7-e840990a6a35
+2026-10-13,azure,uaenorth,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,3.688608,1.844304,,DZH318Z0F8W2/006G|54f2770d-2978-58c5-8bba-635328938c65
+2026-10-13,azure,uksouth,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,17.45,8.725,,DZH318Z0F8W2/0022|01977498-8fef-52e7-a878-92ffeb1d3a68
+2026-10-13,azure,uksouth,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,3.22476,1.61238,,DZH318Z0F8W2/001X|e46aeb8a-1046-5733-97f1-1fd7a94b3a28
+2026-10-13,azure,ukwest,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,18.28,9.14,,DZH318Z0F8W2/00LR|b085a15a-50ee-5ee8-8177-91a79191c9b9
+2026-10-13,azure,ukwest,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,3.378144,1.689072,,DZH318Z0F8W2/00LW|96bc611e-e643-5876-bcc4-7ebe492382bd
+2026-10-13,azure,usgovarizona,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,17.46,8.73,,DZH318Z0F8W2/00LL|03439b87-a91d-5f43-9ea3-59c541a01da5
+2026-10-13,azure,usgovarizona,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,3.226608,1.613304,,DZH318Z0F8W2/00LF|397379c3-07ba-5b78-9d01-f7ad39079bd3
+2026-10-13,azure,westeurope,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,18.16,9.08,,DZH318Z0F8W2/0009|97eff1b6-b029-5d4e-9cf7-eec44d62641c
+2026-10-13,azure,westeurope,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,6.693776,3.346888,,DZH318Z0F8W2/0005|7da5a425-8fb5-5813-b617-20051326e4a4
+2026-10-13,azure,westus,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,18.148,9.074,,DZH318Z0F8W2/003L|74a22078-ba67-52a6-9f5f-dacca5998102
+2026-10-13,azure,westus,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,9.542218,4.771109,,DZH318Z0F8W2/003H|cff98f37-2f9e-5c86-92c8-4424e1e0b9bb
+2026-10-13,azure,westus2,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,13.96,6.98,,DZH318Z0F8W2/002K|960defdc-0c29-5fa1-8ddb-e5ece3de6152
+2026-10-13,azure,westus2,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,6.432768,3.216384,,DZH318Z0F8W2/002P|bca28a02-1589-5725-9648-6f4790983682
+2026-10-13,azure,westus3,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,on_demand,instance,13.96,6.98,,DZH318Z0F8W2/0008|7ef123d4-0db3-5e39-9ac6-798b24e32fbb
+2026-10-13,azure,westus3,Standard_NC80adis_H100_v5,H100 NVL-94GB,H100 NVL,94,2,spot,instance,7.909736,3.954868,,DZH318Z0F8W2/000T|b48ae02b-07ae-52e8-a04c-cec2a76abdb9
+2026-10-13,azure,australiaeast,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,142.6,17.825,,DZH318Z0KN53/01CP|cf80f575-adcb-5203-9567-bfcbc8a089e7
+2026-10-13,azure,australiaeast,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,26.35248,3.29406,,DZH318Z0KN53/01C9|45e72695-b901-5848-9349-4f2fddcecbb6
+2026-10-13,azure,canadacentral,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,117.984,14.748,,DZH318Z0KN53/01H2|604fce96-3f8f-5cc1-8e13-7b1d7929c542
+2026-10-13,azure,canadacentral,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,21.803443,2.725430375,,DZH318Z0KN53/01H9|19cbd6c6-679f-5936-b320-a6eac573e0e8
+2026-10-13,azure,centralus,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,120.934,15.11675,,DZH318Z0KN53/0042|3135efab-343f-5678-84af-26b7e1515ee2
+2026-10-13,azure,centralus,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,22.348603,2.793575375,,DZH318Z0KN53/003R|3fca42c9-fc5b-5289-87b5-501aee88deed
+2026-10-13,azure,eastus,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,98.32,12.29,,DZH318Z0KN53/0046|03f48dbf-423c-5af8-9e6f-36e42dda07ec
+2026-10-13,azure,eastus,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,18.169536,2.271192,,DZH318Z0KN53/0048|84e0c4eb-22a1-574d-acb4-e11c5ca754d3
+2026-10-13,azure,eastus2,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,98.32,12.29,,DZH318Z0KN53/0030|65502bfb-6a12-54dc-b27e-e15b70039e2a
+2026-10-13,azure,eastus2,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,18.169536,2.271192,,DZH318Z0KN53/002X|8cc30de0-76bf-56b7-8714-248cd4790879
+2026-10-13,azure,japaneast,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,142.564,17.8205,,DZH318Z0KN53/00WN|3da18795-731d-58bf-93b2-968503b9f2f0
+2026-10-13,azure,japaneast,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,26.345827,3.293228375,,DZH318Z0KN53/00X1|a6c759d4-fdc6-5b4a-adc7-18a8f9548660
+2026-10-13,azure,japanwest,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,152.396,19.0495,,DZH318Z0KN53/01QF|861e3584-e84d-5b7d-a2eb-a09800d1ea8c
+2026-10-13,azure,japanwest,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,28.162781,3.520347625,,DZH318Z0KN53/01QL|0d3527ff-915d-5437-96d6-1d8770b0489f
+2026-10-13,azure,koreacentral,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,132.732,16.5915,,DZH318Z0KN53/00P0|1ded325e-2a92-50e5-8922-f52f5bbbad0e
+2026-10-13,azure,koreacentral,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,24.528874,3.06610925,,DZH318Z0KN53/00NB|56598c32-7541-530c-8ab8-2b2eb1443fde
+2026-10-13,azure,northcentralus,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,117.984,14.748,,DZH318Z0KN53/01HZ|58a7b484-ea81-5579-9c6b-fc7f6e1034fc
+2026-10-13,azure,northcentralus,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,21.803443,2.725430375,,DZH318Z0KN53/01J1|0c668da0-d8e7-5270-b52d-4bcc804fb418
+2026-10-13,azure,polandcentral,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,127.816,15.977,,DZH318Z0KN53/01KH|64f1de0e-923f-593c-893c-b6cac8594cbc
+2026-10-13,azure,polandcentral,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,23.620397,2.952549625,,DZH318Z0KN53/01JG|98c74530-3a57-51f4-86bf-2c3b496b8e9a
+2026-10-13,azure,southafricanorth,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,168.672,21.084,,DZH318Z0KN53/00TZ|7c6adde2-47a6-57ca-a1e8-40afea5e1661
+2026-10-13,azure,southafricanorth,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,31.170586,3.89632325,,DZH318Z0KN53/00TX|33392f49-2df5-56d6-8c88-b50730bea35d
+2026-10-13,azure,southafricawest,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,186.608,23.326,,DZH318Z0KN53/00G9|b13b00fe-e7bf-5c5f-9e93-3763911934f7
+2026-10-13,azure,southafricawest,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,34.485158,4.31064475,,DZH318Z0KN53/00GV|178c50b1-3c4b-5858-9e02-88a3ec06280d
+2026-10-13,azure,southcentralus,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,117.968,14.746,,DZH318Z0KN53/007P|d6cb7516-17e7-5d73-88d7-b29d546325f0
+2026-10-13,azure,southcentralus,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,21.800486,2.72506075,,DZH318Z0KN53/007B|5bb82156-52dc-5945-b7f7-4ee0c9274481
+2026-10-13,azure,spaincentral,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,127.816,15.977,,DZH318Z0KN53/018M|f30e05cc-4af9-59f3-9fe0-11d730d96bf9
+2026-10-13,azure,spaincentral,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,23.620397,2.952549625,,DZH318Z0KN53/0183|0c266536-387e-5b57-8c0e-3c70d72491a5
+2026-10-13,azure,swedencentral,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,127.816,15.977,,DZH318Z0KN53/005S|cc0c150e-a2f4-57f4-932a-4923c1e00bb0
+2026-10-13,azure,swedencentral,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,23.620397,2.952549625,,DZH318Z0KN53/005W|5e23ec74-d737-5850-ace3-85c458ad16c2
+2026-10-13,azure,switzerlandnorth,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,140.598,17.57475,,DZH318Z0KN53/016Q|6dfba41c-9cf3-54b5-bf5d-63b15b22bc6a
+2026-10-13,azure,switzerlandnorth,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,25.98251,3.24781375,,DZH318Z0KN53/016B|46adec1a-6c06-54d5-84a4-59e6ff81a78f
+2026-10-13,azure,uaenorth,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,140.598,17.57475,,DZH318Z0KN53/00PR|8992a820-95d5-5b07-95f4-0dec4dd8a692
+2026-10-13,azure,uaenorth,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,25.98251,3.24781375,,DZH318Z0KN53/00PP|18efc0a7-f666-53e6-ba83-c7606062b9a4
+2026-10-13,azure,uksouth,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,122.9,15.3625,,DZH318Z0KN53/015B|a9219233-41d3-5fdc-99a3-bac68d1e53a2
+2026-10-13,azure,uksouth,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,22.71192,2.83899,,DZH318Z0KN53/0150|11cfec54-a85a-5243-b91b-72a1568ffd9e
+2026-10-13,azure,usgovarizona,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,122.9,15.3625,,DZH318Z0KN53/02B2|b125fe51-81fd-530a-8f3f-aa45fdf46378
+2026-10-13,azure,usgovarizona,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,22.71192,2.83899,,DZH318Z0KN53/029V|baa3dd6a-70d5-5da8-86d2-e2572beadd4c
+2026-10-13,azure,westcentralus,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,117.984,14.748,,DZH318Z0KN53/00XZ|3f309b06-31a6-5b31-ab2f-5cd757179fd4
+2026-10-13,azure,westcentralus,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,21.803443,2.725430375,,DZH318Z0KN53/00X6|d480b8e7-4017-5e64-80a1-9891d50dd65b
+2026-10-13,azure,westeurope,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,127.816,15.977,,DZH318Z0KN53/0035|6cc75a1c-32aa-527a-9121-389a481a183c
+2026-10-13,azure,westeurope,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,23.620397,2.952549625,,DZH318Z0KN53/003K|425f711c-68be-5ef0-aedd-a2c360e8f20a
+2026-10-13,azure,westus,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,127.816,15.977,,DZH318Z0KN53/01LG|bfcb3ee1-732e-5825-b9b2-94171235b3ff
+2026-10-13,azure,westus,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,23.620397,2.952549625,,DZH318Z0KN53/01LK|e4fe9dc5-ec84-520b-be18-4208c636efae
+2026-10-13,azure,westus2,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,98.32,12.29,,DZH318Z0KN53/0016|2045ec29-5f75-5edf-be40-8490fb5a8ce4
+2026-10-13,azure,westus2,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,18.169536,2.271192,,DZH318Z0KN53/0013|475c3b81-30c8-5fd0-9ed8-034fbb634b6b
+2026-10-13,azure,westus3,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,on_demand,instance,98.32,12.29,,DZH318Z0KN53/006X|033263b0-4866-558a-9a91-4abc4f722062
+2026-10-13,azure,westus3,Standard_ND96isr_H100_v5,H100-80GB,H100,80,8,spot,instance,18.169536,2.271192,,DZH318Z0KN53/0070|cc756014-d5d0-5888-ac58-849093ab3c40
+2026-10-13,azure,australiaeast,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,122.96,15.37,,DZH318Z0LFX8/001B|b36676ba-39f9-5e09-953e-d4e671b71560
+2026-10-13,azure,australiaeast,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,122.96,15.37,,DZH318Z0LFX8/001D|632de074-ad9a-5ef9-8394-c9be67f0aecb
+2026-10-13,azure,australiasoutheast,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,110.24,13.78,,DZH318Z0LFX8/004S|ee67577c-7c3a-5917-8eb9-9577dd2317fe
+2026-10-13,azure,australiasoutheast,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,110.24,13.78,,DZH318Z0LFX8/004X|7fb7b69c-4310-5f13-813a-38712edd5e4e
+2026-10-13,azure,brazilsouth,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,169.6,21.2,,DZH318Z0LFX8/0027|9e22f2bb-72c1-581d-8b48-146c6ffc0e3c
+2026-10-13,azure,brazilsouth,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,169.6,21.2,,DZH318Z0LFX8/0028|34e1845f-554f-5f1f-8b52-19e559914f49
+2026-10-13,azure,centralus,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,95.824,11.978,,DZH318Z0LFX8/001Z|b3b71a4e-7008-5f1f-a6bf-58d4fbd42b73
+2026-10-13,azure,centralus,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,95.824,11.978,,DZH318Z0LFX8/001H|c481a3d5-7168-52c4-aa94-cc1628880d2c
+2026-10-13,azure,eastus2,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,84.8,10.6,,DZH318Z0LFX8/0008|4b6e52c5-ed9c-550f-8bed-d9cd78c67a73
+2026-10-13,azure,eastus2,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,84.8,10.6,,DZH318Z0LFX8/0004|95faebf8-f1b3-5f58-8546-e9d8437f5df7
+2026-10-13,azure,francecentral,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,106.0,13.25,,DZH318Z0LFX8/000N|fa050596-7005-56c3-9f4e-652100415132
+2026-10-13,azure,francecentral,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,106.0,13.25,,DZH318Z0LFX8/000F|bb0be7be-0e27-58b6-b9da-5a28f4356581
+2026-10-13,azure,germanywestcentral,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,110.24,13.78,,DZH318Z0LFX8/0053|4196850f-e5d5-529e-a8b8-967ce03cdc8d
+2026-10-13,azure,germanywestcentral,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,110.24,13.78,,DZH318Z0LFX8/0057|d32eec00-9822-57b0-9adf-e8e432b39c54
+2026-10-13,azure,indonesiacentral,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,99.216,12.402,,DZH318Z0LFX8/004Z|b328744a-02eb-5409-a7fc-4d862d480d6c
+2026-10-13,azure,indonesiacentral,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,99.216,12.402,,DZH318Z0LFX8/0050|585e03f5-4fb4-527c-b39e-1bfab40aec8e
+2026-10-13,azure,italynorth,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,110.24,13.78,,DZH318Z0LFX8/001P|ade27be0-d58c-541e-8fa0-e22e0bcfe70a
+2026-10-13,azure,italynorth,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,110.24,13.78,,DZH318Z0LFX8/001G|c787a045-3cb8-56af-a0c8-53211786b6e5
+2026-10-13,azure,japaneast,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,106.0,13.25,,DZH318Z0LFX8/000P|aba458ed-2caf-5287-ad5a-ff006b79753b
+2026-10-13,azure,japaneast,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,106.0,13.25,,DZH318Z0LFX8/000G|dfaeffbc-dffc-52b0-9c95-3985bea1d61b
+2026-10-13,azure,japanwest,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,131.44,16.43,,DZH318Z0LFX8/0055|09b78188-7a04-59e5-b3af-e9ac5dba376d
+2026-10-13,azure,japanwest,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,131.44,16.43,,DZH318Z0LFX8/0056|1549633b-c089-5db1-a3fd-646547e42e1a
+2026-10-13,azure,koreasouth,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,106.0,13.25,,DZH318Z0LFX8/001T|84278c42-83cc-59d5-b8fe-5edbe121a936
+2026-10-13,azure,koreasouth,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,106.0,13.25,,DZH318Z0LFX8/001F|2aad1ec6-a000-56c9-9934-61f056206ee9
+2026-10-13,azure,malaysiawest,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,99.216,12.402,,DZH318Z0LFX8/003K|e3ef7eef-5cc7-54fe-ae0f-634b70fc18d3
+2026-10-13,azure,malaysiawest,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,99.216,12.402,,DZH318Z0LFX8/003M|4e32bb61-319b-515c-ac47-8f8abafa859c
+2026-10-13,azure,mexicocentral,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,93.28,11.66,,DZH318Z0LFX8/003H|dc329763-fec4-5ed0-94a8-c9be2b904ec4
+2026-10-13,azure,mexicocentral,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,93.28,11.66,,DZH318Z0LFX8/003G|f790f69e-1de3-5a05-978e-9e574129a1eb
+2026-10-13,azure,northcentralus,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,101.76,12.72,,DZH318Z0LFX8/0038|d954d1e1-4275-5256-9137-d88ce54dd3b7
+2026-10-13,azure,northcentralus,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,101.76,12.72,,DZH318Z0LFX8/003B|86018f09-3414-5dd2-a468-ff5a337767ec
+2026-10-13,azure,northeurope,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,101.76,12.72,,DZH318Z0LFX8/0012|b697f4b5-87d9-586e-860e-6b29110905a9
+2026-10-13,azure,northeurope,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,101.76,12.72,,DZH318Z0LFX8/0016|55614511-19ca-5852-9ede-4d69bcaed3b4
+2026-10-13,azure,norwayeast,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,121.264,15.158,,DZH318Z0LFX8/0006|02f82a97-1255-5ace-be9b-ea7d8dcb8c09
+2026-10-13,azure,norwayeast,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,121.264,15.158,,DZH318Z0LFX8/0020|d0d3f003-ffb4-50c4-aec8-42a7f305b955
+2026-10-13,azure,polandcentral,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,130.592,16.324,,DZH318Z0LFX8/004T|423dc271-3805-5aad-b43a-e260e92326c2
+2026-10-13,azure,polandcentral,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,130.592,16.324,,DZH318Z0LFX8/0051|1df27f16-1ae8-5386-86f2-ecee786d3b5b
+2026-10-13,azure,southafricanorth,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,123.808,15.476,,DZH318Z0LFX8/0019|a087b74a-2083-5bfe-a74e-1a99aa9ac5a8
+2026-10-13,azure,southafricanorth,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,123.808,15.476,,DZH318Z0LFX8/001N|fab58ab2-06cc-5120-967f-e1616807462c
+2026-10-13,azure,southcentralus2,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,93.28,11.66,,DZH318Z0LFX8/0030|c3ed5f95-ccf1-5f01-8879-9999f21315f1
+2026-10-13,azure,southcentralus2,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,93.28,11.66,,DZH318Z0LFX8/002Z|acb3d3bb-5f94-5ea1-b1d1-099cf4ab9747
+2026-10-13,azure,southeastasia,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,110.24,13.78,,DZH318Z0LFX8/004C|02dfa65f-84f5-56ac-88a3-df6361a06f5a
+2026-10-13,azure,southeastasia,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,110.24,13.78,,DZH318Z0LFX8/004F|c02cc945-f29a-5453-a5d6-86c9d9c80b13
+2026-10-13,azure,spaincentral,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,110.24,13.78,,DZH318Z0LFX8/0017|3b5b1a70-df89-5e80-8761-e232bb9ba83c
+2026-10-13,azure,spaincentral,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,110.24,13.78,,DZH318Z0LFX8/000H|605a63df-05cc-5bc4-9197-a091755b4ed3
+2026-10-13,azure,swedencentral,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,110.272,13.784,,DZH318Z0LFX8/0007|5cdc9e53-5409-5812-acba-fc43117fd1b3
+2026-10-13,azure,swedencentral,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,110.272,13.784,,DZH318Z0LFX8/0001|98562a86-e824-5bd5-87d4-e6df61309857
+2026-10-13,azure,uaenorth,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,121.264,15.158,,DZH318Z0LFX8/000S|7c043fa9-98ec-5cc5-a7bb-64617f89b873
+2026-10-13,azure,uaenorth,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,121.264,15.158,,DZH318Z0LFX8/0010|d708556d-35ea-58ce-9e2a-320265a66f3e
+2026-10-13,azure,uksouth,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,106.0,13.25,,DZH318Z0LFX8/003C|35e97337-d4ff-53d1-8430-ad5e1fa25638
+2026-10-13,azure,uksouth,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,106.0,13.25,,DZH318Z0LFX8/003F|10abcec4-e544-54ca-a568-4c9f1d863d27
+2026-10-13,azure,ukwest,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,111.088,13.886,,DZH318Z0LFX8/003N|00eb171d-0cfb-57c6-8c47-f4a4bf0f6249
+2026-10-13,azure,ukwest,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,111.088,13.886,,DZH318Z0LFX8/003P|dea42bcf-29a7-5500-92c5-1d7b939d30e3
+2026-10-13,azure,usgovarizona,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,106.0,13.25,,DZH318Z0LFX8/0071|74434e10-647a-5ad5-beaf-b85cd5dd1ccf
+2026-10-13,azure,usgovarizona,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,106.0,13.25,,DZH318Z0LFX8/006Z|f87c5cc0-cf75-5c3f-91d1-29cf32a5c39f
+2026-10-13,azure,usgovvirginia,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,106.0,13.25,,DZH318Z0LFX8/0059|00388fe5-8bec-5b42-8bc0-7fa9b12c1eb6
+2026-10-13,azure,usgovvirginia,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,106.0,13.25,,DZH318Z0LFX8/005C|e43fe3d3-3386-5cd5-808b-037e3eda6c6f
+2026-10-13,azure,westus,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,110.24,13.78,,DZH318Z0LFX8/000V|00a879e0-f555-53b4-aa7f-2722f716bc32
+2026-10-13,azure,westus,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,110.24,13.78,,DZH318Z0LFX8/0014|17b79389-0f74-52cd-a492-253a626c24a7
+2026-10-13,azure,westus2,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,84.8,10.6,,DZH318Z0LFX8/0018|2cb64e32-df37-577a-8a2e-f5000b487e50
+2026-10-13,azure,westus2,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,84.8,10.6,,DZH318Z0LFX8/000J|b6abf711-9d9d-5830-97ba-c0bf6c1b4782
+2026-10-13,azure,westus3,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,on_demand,instance,84.8,10.6,,DZH318Z0LFX8/001S|a9ee3b7b-a38d-55b6-902c-a315a07245a4
+2026-10-13,azure,westus3,Standard_ND96isr_H200_v5,H200-141GB,H200,141,8,spot,instance,84.8,10.6,,DZH318Z0LFX8/001K|9244d63a-214b-58f4-a8a5-76fcbaf81010
