@@ -63,3 +63,7 @@ snapshot_date,provider,reason,count
 2026-10-25,azure,price_type_devtestconsumption,618
 2026-10-25,azure,price_type_reservation,462
 2026-10-25,azure,windows_license_included,628
+2026-10-26,azure,low_priority_batch,182
+2026-10-26,azure,price_type_devtestconsumption,618
+2026-10-26,azure,price_type_reservation,462
+2026-10-26,azure,windows_license_included,628
