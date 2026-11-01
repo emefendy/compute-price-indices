@@ -1,6 +1,6 @@
 # GPU price report
 
-Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes today.
+Latest snapshot: **2026-11-01** · 23 snapshot(s) since 2026-10-10 · 448 quotes today.
 
 ## On-demand price per GPU-hour
 
@@ -21,8 +21,8 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | gpu_class | provider | pairs | median_discount_pct |
 |---|---|---|---|
 | A100-40GB | azure | 6 | 78.3 |
-| A100-80GB | azure | 104 | 81.5 |
-| H100 NVL-94GB | azure | 54 | 81.1 |
+| A100-80GB | azure | 104 | 79.7 |
+| H100 NVL-94GB | azure | 54 | 79.7 |
 | H100-80GB | azure | 24 | 81.5 |
 | H200-141GB | azure | 31 | 0.0 |
 
@@ -56,6 +56,7 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | 2026-10-29 | 6 | 6 | 4.16 | 100.0 | 100.0 |
 | 2026-10-30 | 6 | 6 | 4.16 | 100.0 | 100.0 |
 | 2026-10-31 | 6 | 6 | 4.16 | 100.0 | 100.0 |
+| 2026-11-01 | 6 | 6 | 4.16 | 100.0 | 100.0 |
 
 **A100-80GB**
 
@@ -83,6 +84,7 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | 2026-10-29 | 110 | 110 | 4.78 | 100.0 | 100.0 |
 | 2026-10-30 | 110 | 110 | 4.78 | 100.0 | 100.0 |
 | 2026-10-31 | 110 | 110 | 4.78 | 100.0 | 100.0 |
+| 2026-11-01 | 110 | 110 | 4.78 | 100.0 | 100.0 |
 
 **H100 NVL-94GB**
 
@@ -110,6 +112,7 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | 2026-10-29 | 58 | 58 | 9.07 | 100.0 | 100.0 |
 | 2026-10-30 | 58 | 58 | 9.07 | 100.0 | 100.0 |
 | 2026-10-31 | 58 | 58 | 9.07 | 100.0 | 100.0 |
+| 2026-11-01 | 58 | 58 | 9.07 | 100.0 | 100.0 |
 
 **H100-80GB**
 
@@ -137,6 +140,7 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | 2026-10-29 | 24 | 24 | 15.98 | 100.0 | 100.0 |
 | 2026-10-30 | 24 | 24 | 15.98 | 100.0 | 100.0 |
 | 2026-10-31 | 24 | 24 | 15.98 | 100.0 | 100.0 |
+| 2026-11-01 | 24 | 24 | 15.98 | 100.0 | 100.0 |
 
 **H200-141GB**
 
@@ -164,13 +168,14 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | 2026-10-29 | 31 | 31 | 13.25 | 100.0 | 100.0 |
 | 2026-10-30 | 31 | 31 | 13.25 | 100.0 | 100.0 |
 | 2026-10-31 | 31 | 31 | 13.25 | 100.0 | 100.0 |
+| 2026-11-01 | 31 | 31 | 13.25 | 100.0 | 100.0 |
 
 ## Data quality
 
 | severity | check | count |
 |---|---|---|
-| error | spot_at_or_above_on_demand | 682 |
-| warning | price_outlier | 484 |
+| error | spot_at_or_above_on_demand | 713 |
+| warning | price_outlier | 492 |
 
 <details><summary>All issues</summary>
 
@@ -858,6 +863,37 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | spot_at_or_above_on_demand | error | 2026-10-31 | azure | westus | Standard_ND96isr_H200_v5 | spot | spot $110.24 vs on-demand $110.24 |
 | spot_at_or_above_on_demand | error | 2026-10-31 | azure | westus2 | Standard_ND96isr_H200_v5 | spot | spot $84.8 vs on-demand $84.8 |
 | spot_at_or_above_on_demand | error | 2026-10-31 | azure | westus3 | Standard_ND96isr_H200_v5 | spot | spot $84.8 vs on-demand $84.8 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | australiaeast | Standard_ND96isr_H200_v5 | spot | spot $122.96 vs on-demand $122.96 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | australiasoutheast | Standard_ND96isr_H200_v5 | spot | spot $110.24 vs on-demand $110.24 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | brazilsouth | Standard_ND96isr_H200_v5 | spot | spot $169.6 vs on-demand $169.6 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | centralus | Standard_ND96isr_H200_v5 | spot | spot $95.824 vs on-demand $95.824 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | eastus2 | Standard_ND96isr_H200_v5 | spot | spot $84.8 vs on-demand $84.8 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | francecentral | Standard_ND96isr_H200_v5 | spot | spot $106.0 vs on-demand $106.0 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | germanywestcentral | Standard_ND96isr_H200_v5 | spot | spot $110.24 vs on-demand $110.24 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | indonesiacentral | Standard_ND96isr_H200_v5 | spot | spot $99.216 vs on-demand $99.216 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | italynorth | Standard_ND96isr_H200_v5 | spot | spot $110.24 vs on-demand $110.24 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | japaneast | Standard_ND96isr_H200_v5 | spot | spot $106.0 vs on-demand $106.0 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | japanwest | Standard_ND96isr_H200_v5 | spot | spot $131.44 vs on-demand $131.44 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | koreasouth | Standard_ND96isr_H200_v5 | spot | spot $106.0 vs on-demand $106.0 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | malaysiawest | Standard_ND96isr_H200_v5 | spot | spot $99.216 vs on-demand $99.216 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | mexicocentral | Standard_ND96isr_H200_v5 | spot | spot $93.28 vs on-demand $93.28 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | northcentralus | Standard_ND96isr_H200_v5 | spot | spot $101.76 vs on-demand $101.76 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | northeurope | Standard_ND96isr_H200_v5 | spot | spot $101.76 vs on-demand $101.76 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | norwayeast | Standard_ND96isr_H200_v5 | spot | spot $121.264 vs on-demand $121.264 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | polandcentral | Standard_ND96isr_H200_v5 | spot | spot $130.592 vs on-demand $130.592 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | southafricanorth | Standard_ND96isr_H200_v5 | spot | spot $123.808 vs on-demand $123.808 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | southcentralus2 | Standard_ND96isr_H200_v5 | spot | spot $93.28 vs on-demand $93.28 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | southeastasia | Standard_ND96isr_H200_v5 | spot | spot $110.24 vs on-demand $110.24 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | spaincentral | Standard_ND96isr_H200_v5 | spot | spot $110.24 vs on-demand $110.24 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | swedencentral | Standard_ND96isr_H200_v5 | spot | spot $110.272 vs on-demand $110.272 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | uaenorth | Standard_ND96isr_H200_v5 | spot | spot $121.264 vs on-demand $121.264 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | uksouth | Standard_ND96isr_H200_v5 | spot | spot $106.0 vs on-demand $106.0 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | ukwest | Standard_ND96isr_H200_v5 | spot | spot $111.088 vs on-demand $111.088 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | usgovarizona | Standard_ND96isr_H200_v5 | spot | spot $106.0 vs on-demand $106.0 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | usgovvirginia | Standard_ND96isr_H200_v5 | spot | spot $106.0 vs on-demand $106.0 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | westus | Standard_ND96isr_H200_v5 | spot | spot $110.24 vs on-demand $110.24 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | westus2 | Standard_ND96isr_H200_v5 | spot | spot $84.8 vs on-demand $84.8 |
+| spot_at_or_above_on_demand | error | 2026-11-01 | azure | westus3 | Standard_ND96isr_H200_v5 | spot | spot $84.8 vs on-demand $84.8 |
 | price_outlier | warning | 2026-10-10 | azure | australiaeast | Standard_ND96amsr_A100_v4 | spot | $1.53/GPU-hr vs A100-80GB median $0.88 (modified z=3.6) |
 | price_outlier | warning | 2026-10-10 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | spot | $2.11/GPU-hr vs A100-80GB median $0.88 (modified z=5.8) |
 | price_outlier | warning | 2026-10-10 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | on_demand | $8.19/GPU-hr vs A100-80GB median $4.78 (modified z=3.6) |
@@ -881,8 +917,8 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | price_outlier | warning | 2026-10-10 | azure | westus3 | Standard_NC40ads_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-10 | azure | westus3 | Standard_NC80adis_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-11 | azure | australiaeast | Standard_ND96amsr_A100_v4 | spot | $1.53/GPU-hr vs A100-80GB median $0.88 (modified z=3.6) |
-| price_outlier | warning | 2026-10-11 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | on_demand | $8.19/GPU-hr vs A100-80GB median $4.78 (modified z=3.6) |
 | price_outlier | warning | 2026-10-11 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | spot | $2.11/GPU-hr vs A100-80GB median $0.88 (modified z=5.8) |
+| price_outlier | warning | 2026-10-11 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | on_demand | $8.19/GPU-hr vs A100-80GB median $4.78 (modified z=3.6) |
 | price_outlier | warning | 2026-10-11 | azure | centralindia | Standard_NC40ads_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-11 | azure | centralindia | Standard_NC80adis_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-11 | azure | germanynorth | Standard_ND96amsr_A100_v4 | spot | $1.78/GPU-hr vs A100-80GB median $0.88 (modified z=4.6) |
@@ -991,8 +1027,8 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | price_outlier | warning | 2026-10-15 | azure | westus3 | Standard_NC40ads_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-15 | azure | westus3 | Standard_NC80adis_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-16 | azure | australiaeast | Standard_ND96amsr_A100_v4 | spot | $1.53/GPU-hr vs A100-80GB median $0.88 (modified z=3.6) |
-| price_outlier | warning | 2026-10-16 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | spot | $2.11/GPU-hr vs A100-80GB median $0.88 (modified z=5.8) |
 | price_outlier | warning | 2026-10-16 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | on_demand | $8.19/GPU-hr vs A100-80GB median $4.78 (modified z=3.6) |
+| price_outlier | warning | 2026-10-16 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | spot | $2.11/GPU-hr vs A100-80GB median $0.88 (modified z=5.8) |
 | price_outlier | warning | 2026-10-16 | azure | centralindia | Standard_NC40ads_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-16 | azure | centralindia | Standard_NC80adis_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-16 | azure | germanynorth | Standard_ND96amsr_A100_v4 | spot | $1.78/GPU-hr vs A100-80GB median $0.88 (modified z=4.6) |
@@ -1013,8 +1049,8 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | price_outlier | warning | 2026-10-16 | azure | westus3 | Standard_NC40ads_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-16 | azure | westus3 | Standard_NC80adis_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-17 | azure | australiaeast | Standard_ND96amsr_A100_v4 | spot | $1.53/GPU-hr vs A100-80GB median $0.88 (modified z=3.6) |
-| price_outlier | warning | 2026-10-17 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | on_demand | $8.19/GPU-hr vs A100-80GB median $4.78 (modified z=3.6) |
 | price_outlier | warning | 2026-10-17 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | spot | $2.11/GPU-hr vs A100-80GB median $0.88 (modified z=5.8) |
+| price_outlier | warning | 2026-10-17 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | on_demand | $8.19/GPU-hr vs A100-80GB median $4.78 (modified z=3.6) |
 | price_outlier | warning | 2026-10-17 | azure | centralindia | Standard_NC40ads_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-17 | azure | centralindia | Standard_NC80adis_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-17 | azure | germanynorth | Standard_ND96amsr_A100_v4 | spot | $1.78/GPU-hr vs A100-80GB median $0.88 (modified z=4.6) |
@@ -1057,8 +1093,8 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | price_outlier | warning | 2026-10-18 | azure | westus3 | Standard_NC40ads_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-18 | azure | westus3 | Standard_NC80adis_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-19 | azure | australiaeast | Standard_ND96amsr_A100_v4 | spot | $1.53/GPU-hr vs A100-80GB median $0.88 (modified z=3.6) |
-| price_outlier | warning | 2026-10-19 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | on_demand | $8.19/GPU-hr vs A100-80GB median $4.78 (modified z=3.6) |
 | price_outlier | warning | 2026-10-19 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | spot | $2.11/GPU-hr vs A100-80GB median $0.88 (modified z=5.8) |
+| price_outlier | warning | 2026-10-19 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | on_demand | $8.19/GPU-hr vs A100-80GB median $4.78 (modified z=3.6) |
 | price_outlier | warning | 2026-10-19 | azure | centralindia | Standard_NC40ads_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-19 | azure | centralindia | Standard_NC80adis_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-19 | azure | germanynorth | Standard_ND96amsr_A100_v4 | spot | $1.78/GPU-hr vs A100-80GB median $0.88 (modified z=4.6) |
@@ -1189,8 +1225,8 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | price_outlier | warning | 2026-10-24 | azure | westus3 | Standard_NC40ads_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-24 | azure | westus3 | Standard_NC80adis_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-25 | azure | australiaeast | Standard_ND96amsr_A100_v4 | spot | $1.53/GPU-hr vs A100-80GB median $0.88 (modified z=3.6) |
-| price_outlier | warning | 2026-10-25 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | on_demand | $8.19/GPU-hr vs A100-80GB median $4.78 (modified z=3.6) |
 | price_outlier | warning | 2026-10-25 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | spot | $2.11/GPU-hr vs A100-80GB median $0.88 (modified z=5.8) |
+| price_outlier | warning | 2026-10-25 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | on_demand | $8.19/GPU-hr vs A100-80GB median $4.78 (modified z=3.6) |
 | price_outlier | warning | 2026-10-25 | azure | centralindia | Standard_NC40ads_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-25 | azure | centralindia | Standard_NC80adis_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-25 | azure | germanynorth | Standard_ND96amsr_A100_v4 | spot | $1.78/GPU-hr vs A100-80GB median $0.88 (modified z=4.6) |
@@ -1211,8 +1247,8 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | price_outlier | warning | 2026-10-25 | azure | westus3 | Standard_NC40ads_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-25 | azure | westus3 | Standard_NC80adis_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-26 | azure | australiaeast | Standard_ND96amsr_A100_v4 | spot | $1.53/GPU-hr vs A100-80GB median $0.88 (modified z=3.6) |
-| price_outlier | warning | 2026-10-26 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | spot | $2.11/GPU-hr vs A100-80GB median $0.88 (modified z=5.8) |
 | price_outlier | warning | 2026-10-26 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | on_demand | $8.19/GPU-hr vs A100-80GB median $4.78 (modified z=3.6) |
+| price_outlier | warning | 2026-10-26 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | spot | $2.11/GPU-hr vs A100-80GB median $0.88 (modified z=5.8) |
 | price_outlier | warning | 2026-10-26 | azure | centralindia | Standard_NC40ads_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-26 | azure | centralindia | Standard_NC80adis_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-26 | azure | germanynorth | Standard_ND96amsr_A100_v4 | spot | $1.78/GPU-hr vs A100-80GB median $0.88 (modified z=4.6) |
@@ -1233,8 +1269,8 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | price_outlier | warning | 2026-10-26 | azure | westus3 | Standard_NC40ads_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-26 | azure | westus3 | Standard_NC80adis_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-27 | azure | australiaeast | Standard_ND96amsr_A100_v4 | spot | $1.53/GPU-hr vs A100-80GB median $0.88 (modified z=3.6) |
-| price_outlier | warning | 2026-10-27 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | spot | $2.11/GPU-hr vs A100-80GB median $0.88 (modified z=5.8) |
 | price_outlier | warning | 2026-10-27 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | on_demand | $8.19/GPU-hr vs A100-80GB median $4.78 (modified z=3.6) |
+| price_outlier | warning | 2026-10-27 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | spot | $2.11/GPU-hr vs A100-80GB median $0.88 (modified z=5.8) |
 | price_outlier | warning | 2026-10-27 | azure | centralindia | Standard_NC40ads_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-27 | azure | centralindia | Standard_NC80adis_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-27 | azure | germanynorth | Standard_ND96amsr_A100_v4 | spot | $1.78/GPU-hr vs A100-80GB median $0.88 (modified z=4.6) |
@@ -1299,8 +1335,8 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | price_outlier | warning | 2026-10-29 | azure | westus3 | Standard_NC40ads_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-29 | azure | westus3 | Standard_NC80adis_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-30 | azure | australiaeast | Standard_ND96amsr_A100_v4 | spot | $1.53/GPU-hr vs A100-80GB median $0.88 (modified z=3.6) |
-| price_outlier | warning | 2026-10-30 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | spot | $2.11/GPU-hr vs A100-80GB median $0.88 (modified z=5.8) |
 | price_outlier | warning | 2026-10-30 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | on_demand | $8.19/GPU-hr vs A100-80GB median $4.78 (modified z=3.6) |
+| price_outlier | warning | 2026-10-30 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | spot | $2.11/GPU-hr vs A100-80GB median $0.88 (modified z=5.8) |
 | price_outlier | warning | 2026-10-30 | azure | centralindia | Standard_NC40ads_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-30 | azure | centralindia | Standard_NC80adis_H100_v5 | spot | $4.96/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.7) |
 | price_outlier | warning | 2026-10-30 | azure | germanynorth | Standard_ND96amsr_A100_v4 | spot | $1.78/GPU-hr vs A100-80GB median $0.88 (modified z=4.6) |
@@ -1342,6 +1378,14 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 | price_outlier | warning | 2026-10-31 | azure | westus | Standard_NC80adis_H100_v5 | spot | $4.77/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=5.5) |
 | price_outlier | warning | 2026-10-31 | azure | westus3 | Standard_NC40ads_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
 | price_outlier | warning | 2026-10-31 | azure | westus3 | Standard_NC80adis_H100_v5 | spot | $3.95/GPU-hr vs H100 NVL-94GB median $1.79 (modified z=4.4) |
+| price_outlier | warning | 2026-11-01 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | on_demand | $8.19/GPU-hr vs A100-80GB median $4.78 (modified z=3.6) |
+| price_outlier | warning | 2026-11-01 | azure | brazilsouth | Standard_ND96amsr_A100_v4 | spot | $2.11/GPU-hr vs A100-80GB median $0.97 (modified z=3.7) |
+| price_outlier | warning | 2026-11-01 | azure | centralindia | Standard_NC40ads_H100_v5 | spot | $5.46/GPU-hr vs H100 NVL-94GB median $1.84 (modified z=4.9) |
+| price_outlier | warning | 2026-11-01 | azure | centralindia | Standard_NC80adis_H100_v5 | spot | $5.46/GPU-hr vs H100 NVL-94GB median $1.84 (modified z=4.9) |
+| price_outlier | warning | 2026-11-01 | azure | westus | Standard_NC40ads_H100_v5 | spot | $5.25/GPU-hr vs H100 NVL-94GB median $1.84 (modified z=4.7) |
+| price_outlier | warning | 2026-11-01 | azure | westus | Standard_NC80adis_H100_v5 | spot | $5.25/GPU-hr vs H100 NVL-94GB median $1.84 (modified z=4.7) |
+| price_outlier | warning | 2026-11-01 | azure | westus3 | Standard_NC40ads_H100_v5 | spot | $4.35/GPU-hr vs H100 NVL-94GB median $1.84 (modified z=3.8) |
+| price_outlier | warning | 2026-11-01 | azure | westus3 | Standard_NC80adis_H100_v5 | spot | $4.35/GPU-hr vs H100 NVL-94GB median $1.84 (modified z=3.8) |
 
 </details>
 
@@ -1349,7 +1393,7 @@ Latest snapshot: **2026-10-31** · 22 snapshot(s) since 2026-10-10 · 448 quotes
 
 | provider | reason | count |
 |---|---|---|
-| azure | windows_license_included | 628 |
-| azure | price_type_devtestconsumption | 618 |
+| azure | windows_license_included | 662 |
+| azure | price_type_devtestconsumption | 652 |
 | azure | price_type_reservation | 462 |
 | azure | low_priority_batch | 182 |
