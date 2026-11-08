@@ -9,6 +9,7 @@ when the cleaning rules change.
 | Azure    | Retail Prices API                | none                                   |
 | AWS      | Price List Query API (boto3)     | any AWS credentials (free to call)     |
 | GCP      | Cloud Billing Catalog API        | a free API key in GCP_API_KEY          |
+| Runcrate | Public GPU pricing feed          | none                                   |
 """
 
 from __future__ import annotations
@@ -26,6 +27,7 @@ AZURE_URL = "https://prices.azure.com/api/retail/prices"
 AZURE_API_VERSION = "2023-01-01-preview"
 GCP_COMPUTE_ENGINE_SERVICE_ID = "6F81-5844-456A"
 GCP_URL = f"https://cloudbilling.googleapis.com/v1/services/{GCP_COMPUTE_ENGINE_SERVICE_ID}/skus"
+RUNCRATE_URL = "https://www.runcrate.ai/api/gpu-pricing"
 
 
 def _session() -> requests.Session:
@@ -104,3 +106,12 @@ def collect_gcp(api_key: str | None = None, session: requests.Session | None = N
             break
         params["pageToken"] = token
     return {"source": GCP_URL, "skus": skus}  # note: the API key is never written to disk
+
+
+def collect_runcrate(session: requests.Session | None = None) -> dict:
+    """Runcrate's public pricing feed: one record per GPU type, no key needed."""
+    session = session or _session()
+    resp = session.get(RUNCRATE_URL, timeout=60)
+    resp.raise_for_status()
+    body = resp.json()
+    return {"source": RUNCRATE_URL, "fetched_at": body.get("fetched_at"), "gpus": body.get("gpus", [])}

@@ -1,7 +1,7 @@
 # Collects a price snapshot every day and commits it back to the repo
 # ("git scraping"), so the git history itself becomes the dataset's audit trail.
 #
-# Azure needs no credentials. AWS and GCP are skipped unless you add secrets:
+# Azure and Runcrate need no credentials. AWS and GCP are skipped unless you add secrets:
 #   AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY  (any IAM user with pricing:GetProducts)
 #   GCP_API_KEY                                (a key with the Cloud Billing API enabled)
 name: collect
@@ -36,7 +36,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           GCP_API_KEY: ${{ secrets.GCP_API_KEY }}
         run: |
-          providers="azure"
+          providers="azure,runcrate"
           [ -n "$AWS_ACCESS_KEY_ID" ] && providers="$providers,aws"
           [ -n "$GCP_API_KEY" ] && providers="$providers,gcp"
           gpu-prices run --providers "$providers"

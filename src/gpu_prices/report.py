@@ -14,7 +14,7 @@ import polars as pl  # noqa: E402
 from .analyze import price_index, price_summary, spot_discount  # noqa: E402
 
 # Fixed color per provider (color follows the entity, never its rank).
-PROVIDER_COLORS = {"aws": "#2a78d6", "azure": "#eb6834", "gcp": "#1baf7a"}
+PROVIDER_COLORS = {"aws": "#2a78d6", "azure": "#eb6834", "gcp": "#1baf7a", "runcrate": "#eda100"}
 SERIES_COLORS = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300"]
 INK, MUTED, GRID = "#222222", "#6b6b6b", "#e6e6e6"
 
@@ -69,7 +69,7 @@ def chart_prices(summary: pl.DataFrame, path: Path) -> bool:
     ax.invert_yaxis()
     ax.set_xlabel("Median on-demand price, $ per GPU-hour (whole-VM price ÷ GPUs)", color=MUTED, fontsize=9)
     ax.set_title(
-        "On-demand GPU prices, latest snapshot (AWS & Azure; GCP prices GPUs separately)",
+        "On-demand GPU prices, latest snapshot (AWS, Azure & Runcrate; GCP prices GPUs separately)",
         loc="left",
         color=INK,
         fontsize=10,
