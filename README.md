@@ -18,6 +18,7 @@ report  ──▶ reports/      summary tables, spot discounts, price index, cha
 | Azure | [Retail Prices API](https://learn.microsoft.com/en-us/rest/api/cost-management/retail-prices/azure-retail-prices) | none |
 | AWS | Price List Query API (`boto3` `pricing.get_products`) | any AWS credentials (free) |
 | GCP | Cloud Billing Catalog API | free API key |
+| Runcrate | Public GPU pricing feed (`https://www.runcrate.ai/api/gpu-pricing`) | none |
 
 A GitHub Action runs the pipeline daily and commits the snapshot back to the repo, so the git history doubles as an audit trail for every price.
 
@@ -61,6 +62,8 @@ Raw price lists contain far more than "the price of a GPU." Every filtered recor
 | `capacity_reservation_line` | AWS billing line items for reserved capacity |
 | `commitment_or_other_usage_type` | GCP committed-use pricing |
 | `special_pricing_program` | GCP DWS, calendar mode and similar programs |
+| `ambiguous_gpu_variant` | Runcrate H100 and V100: the feed doesn't say SXM vs PCIe or which memory size |
+| `out_of_stock` | Runcrate types with no live offers, whose feed price is stale |
 | `unsupported_gpu_model` | Older GPUs (T4, V100…) outside the tracked set |
 | `non_hourly_unit`, `non_usd_currency`, `tiered_rate` | Not comparable without conversion assumptions |
 | `instance_not_in_catalog` | No known GPU count, so no per-GPU price |
@@ -71,7 +74,7 @@ Prices are quoted per *instance*, and instances hold different numbers of GPUs (
 
 ### Comparability: `price_basis`
 
-AWS and Azure sell whole VMs, so their per-GPU price includes CPU, RAM and networking (`instance`). GCP publishes GPU-only line items with the VM billed separately (`accelerator_only`). These are tagged and never mixed in the same comparison or outlier group.
+AWS and Azure sell whole VMs, so their per-GPU price includes CPU, RAM and networking (`instance`), and so does Runcrate's per-GPU-hour price. GCP publishes GPU-only line items with the VM billed separately (`accelerator_only`). These are tagged and never mixed in the same comparison or outlier group.
 
 ## Data-quality checks
 
@@ -118,7 +121,7 @@ tests/
 
 - **List prices only.** Large buyers negotiate discounts, and the spot market moves intraday. These are public retail prices sampled once a day.
 - **Spot coverage** is Azure and GCP only. AWS spot prices come from a different API (`DescribeSpotPriceHistory`) that isn't wired in yet.
-- **Hyperscalers only.** Specialized GPU clouds (Lambda, CoreWeave, RunPod and others) are often much cheaper and would be a valuable next source.
+- **Mostly hyperscalers.** Runcrate is the only specialized GPU cloud so far. Lambda, CoreWeave, RunPod and others are often much cheaper and would be a valuable next source.
 - The catalog has to be updated by hand when new instance types launch, though the rejection log makes that visible.
 
 ## Data and terms

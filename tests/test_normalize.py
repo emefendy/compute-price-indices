@@ -5,7 +5,8 @@ from pathlib import Path
 import pytest
 
 from gpu_prices.catalog import load_catalog
-from gpu_prices.normalize import normalize_aws, normalize_azure, normalize_gcp
+from gpu_prices.collectors import RUNCRATE_URL, collect_runcrate
+from gpu_prices.normalize import normalize_aws, normalize_azure, normalize_gcp, normalize_runcrate
 
 RAW = Path(__file__).parent / "fixtures" / "raw"
 DAY1 = dt.date(2026, 10, 1)
@@ -113,3 +114,56 @@ def test_gcp_money_type_is_parsed_exactly():
     }
     rows, _ = normalize_gcp({"skus": [sku]}, DAY1)
     assert rows[0]["price_per_hour_usd"] == pytest.approx(3.93)
+
+
+def load_runcrate():
+    """Trimmed copy of the live Runcrate feed (fetched 2026-11-08), not synthetic data."""
+    return json.loads((Path(__file__).parent / "fixtures" / "runcrate_feed.json").read_text())
+
+
+def test_runcrate_maps_unambiguous_types_and_rejects_the_rest():
+    raw = load_runcrate()
+    rows, rejected = normalize_runcrate(raw, DAY1)
+    assert rejected == {"ambiguous_gpu_variant": 2, "unsupported_gpu_model": 3}  # H100, V100 / MI350X, A5000, Gaudi
+    classes = {r["instance_type"]: r["gpu_class"] for r in rows}
+    assert classes == {
+        "B300": "B300-288GB",
+        "H200": "H200-141GB",
+        "H200_nvl": "H200 NVL-141GB",
+        "A100_80G": "A100-80GB",
+        "A100": "A100-40GB",
+        "RTX4090": "RTX 4090-24GB",
+    }
+    feed = {g["gpu_type"]: g["min_price_hr"] for g in raw["gpus"]}
+    for row in rows:
+        assert row["provider"] == "runcrate" and row["region"] == "global"
+        assert row["pricing_model"] == "on_demand" and row["price_basis"] == "instance"
+        assert row["gpu_count"] == 1
+        assert row["price_per_hour_usd"] == row["price_per_gpu_hour_usd"] == feed[row["instance_type"]]
+
+
+def test_runcrate_skips_types_with_no_live_offers():
+    raw = load_runcrate()
+    b300 = next(g for g in raw["gpus"] if g["gpu_type"] == "B300")
+    b300["available_options"] = 0  # the feed keeps the last price for out-of-stock types
+    rows, rejected = normalize_runcrate(raw, DAY1)
+    assert "B300" not in {r["instance_type"] for r in rows}
+    assert rejected["out_of_stock"] == 1
+
+
+def test_collect_runcrate_keeps_the_raw_records():
+    class FakeResponse:
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return load_runcrate()
+
+    class FakeSession:
+        def get(self, url, timeout):
+            assert url == RUNCRATE_URL
+            return FakeResponse()
+
+    raw = collect_runcrate(FakeSession())
+    assert raw["gpus"] == load_runcrate()["gpus"]
+    assert normalize_runcrate(raw, DAY1)[0]

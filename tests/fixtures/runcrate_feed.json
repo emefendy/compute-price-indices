@@ -1,0 +1,83 @@
+{
+ "source": "https://www.runcrate.ai/api/gpu-pricing",
+ "fetched_at": "2026-11-08T06:43:03.032Z",
+ "gpus": [
+  {
+   "gpu_type": "B300",
+   "name": "B300",
+   "vram": "288GB",
+   "min_price_hr": 18.12,
+   "available_options": 3
+  },
+  {
+   "gpu_type": "MI350X",
+   "name": "MI350X",
+   "vram": "288GB",
+   "min_price_hr": 5.72,
+   "available_options": 0
+  },
+  {
+   "gpu_type": "H200",
+   "name": "H200",
+   "vram": "141GB",
+   "min_price_hr": 5.13,
+   "available_options": 15
+  },
+  {
+   "gpu_type": "H200_nvl",
+   "name": "H200 NVL",
+   "vram": "141GB",
+   "min_price_hr": 4.67,
+   "available_options": 4
+  },
+  {
+   "gpu_type": "H100",
+   "name": "H100",
+   "vram": "80GB",
+   "min_price_hr": 3.58,
+   "available_options": 14
+  },
+  {
+   "gpu_type": "A100_80G",
+   "name": "A100 80GB",
+   "vram": "80GB",
+   "min_price_hr": 1.73,
+   "available_options": 17
+  },
+  {
+   "gpu_type": "A100",
+   "name": "A100 40GB",
+   "vram": "40GB",
+   "min_price_hr": 1.99,
+   "available_options": 5
+  },
+  {
+   "gpu_type": "RTX4090",
+   "name": "RTX 4090",
+   "vram": "24GB",
+   "min_price_hr": 0.58,
+   "available_options": 10
+  },
+  {
+   "gpu_type": "A5000",
+   "name": "A5000",
+   "vram": "24GB",
+   "min_price_hr": 2.04,
+   "available_options": 3
+  },
+  {
+   "gpu_type": "V100",
+   "name": "V100 16GB",
+   "vram": "16GB",
+   "min_price_hr": 3.35,
+   "available_options": 1
+  },
+  {
+   "gpu_type": "GAUDI2",
+   "name": "GAUDI2",
+   "vram": "\u2014",
+   "min_price_hr": 1.56,
+   "available_options": 0
+  }
+ ]
+}

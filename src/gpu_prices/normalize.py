@@ -269,4 +269,83 @@ def normalize_gcp(raw: dict, snapshot_date: dt.date, catalog: Catalog | None = N
     return rows, rejected
 
 
-NORMALIZERS = {"azure": normalize_azure, "aws": normalize_aws, "gcp": normalize_gcp}
+# --------------------------------------------------------------------------- Runcrate
+
+# Feed gpu_type -> gpu_model. Memory comes from the feed's `vram`. Only types the feed
+# identifies unambiguously are mapped. H100 (the feed does not say SXM or PCIe, and the
+# catalog keeps H100 and H100 NVL apart) and V100 (two memory sizes) are rejected as
+# "ambiguous_gpu_variant" rather than guessed.
+_RUNCRATE_GPUS = {
+    "B300": "B300",
+    "B200": "B200",
+    "H200": "H200",
+    "H200_nvl": "H200 NVL",
+    "A100_80G": "A100",
+    "A100": "A100",
+    "L40S": "L40S",
+    "L40": "L40",
+    "RTX5090": "RTX 5090",
+    "RTX4090": "RTX 4090",
+    "RTX3090": "RTX 3090",
+    "RTX6000Ada": "RTX 6000 Ada",
+    "RTXPro6000": "RTX PRO 6000",
+    "A6000": "A6000",
+    "A40": "A40",
+    "L4": "L4",
+    "A10": "A10",
+}
+_RUNCRATE_AMBIGUOUS = {"H100", "V100", "V100_32G"}
+
+
+def normalize_runcrate(raw: dict, snapshot_date: dt.date, catalog: Catalog | None = None) -> Result:
+    rows: list[Row] = []
+    rejected: Counter = Counter()
+    for gpu in raw.get("gpus", []):
+        gpu_type = gpu.get("gpu_type", "")
+        memory = _to_int(re.sub(r"\D", "", str(gpu.get("vram") or "")))
+        try:
+            price = float(gpu["min_price_hr"])
+        except (KeyError, TypeError, ValueError):
+            price = None
+
+        reason = None
+        if gpu_type in _RUNCRATE_AMBIGUOUS:
+            reason = "ambiguous_gpu_variant"
+        elif gpu_type not in _RUNCRATE_GPUS:
+            reason = "unsupported_gpu_model"
+        elif int(gpu.get("available_options") or 0) < 1:
+            reason = "out_of_stock"  # the feed keeps a stale price for types with no live offers
+        elif not memory:
+            reason = "unparseable_memory"
+        elif price is None:
+            reason = "no_price"
+        if reason:
+            rejected[reason] += 1
+            continue
+
+        rows.append(
+            _row(
+                snapshot_date,
+                "runcrate",
+                "global",  # one price per GPU type, not per region
+                gpu_type,
+                _RUNCRATE_GPUS[gpu_type],
+                memory,
+                1,
+                "on_demand",
+                # min_price_hr is $/GPU-hour for a GPU sold with its vCPU and RAM.
+                "instance",
+                price,
+                None,  # the feed's specs.num_gpus is not the unit of min_price_hr, so no vendor count
+                gpu_type,
+            )
+        )
+    return rows, rejected
+
+
+NORMALIZERS = {
+    "azure": normalize_azure,
+    "aws": normalize_aws,
+    "gcp": normalize_gcp,
+    "runcrate": normalize_runcrate,
+}

@@ -26,6 +26,7 @@ def cmd_collect(args) -> int:
         "azure": lambda: collectors.collect_azure(catalog),
         "aws": lambda: collectors.collect_aws(catalog),
         "gcp": lambda: collectors.collect_gcp(),
+        "runcrate": lambda: collectors.collect_runcrate(),
     }
     ok = 0
     for provider in [p.strip() for p in args.providers.split(",") if p.strip()]:
@@ -88,7 +89,7 @@ def main(argv: list[str] | None = None) -> int:
 
     for name in ("collect", "run"):
         p = sub.add_parser(name)
-        p.add_argument("--providers", default="azure,aws,gcp")
+        p.add_argument("--providers", default="azure,aws,gcp,runcrate")
         p.add_argument("--date", help="snapshot date, YYYY-MM-DD (default: today, UTC)")
         p.add_argument("--strict", action="store_true", help="exit 1 if any error-level issue is found")
     sub.add_parser("build")
