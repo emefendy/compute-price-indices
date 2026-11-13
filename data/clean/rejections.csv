@@ -135,3 +135,7 @@ snapshot_date,provider,reason,count
 2026-11-12,azure,price_type_devtestconsumption,618
 2026-11-12,azure,price_type_reservation,462
 2026-11-12,azure,windows_license_included,628
+2026-11-13,azure,low_priority_batch,182
+2026-11-13,azure,price_type_devtestconsumption,618
+2026-11-13,azure,price_type_reservation,462
+2026-11-13,azure,windows_license_included,628
